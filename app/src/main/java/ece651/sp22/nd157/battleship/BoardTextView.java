@@ -38,7 +38,11 @@ public class BoardTextView {
       line.append(" ");
       for (int j=0; j<toDisplay.getWidth(); j++){
         line.append(sep);
+        if (toDisplay.whatIsAt(new Coordinate(i, j)) != null){
+          line.append(toDisplay.whatIsAt(new Coordinate(i, j)).toString());
+        }else{
         line.append(" ");
+        }
         sep = "|";
       }
       line.append(" ");

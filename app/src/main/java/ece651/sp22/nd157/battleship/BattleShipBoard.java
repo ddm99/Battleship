@@ -6,23 +6,23 @@ public class BattleShipBoard<T> implements Board<T> {
   private final int width;
   private final int height;
   private final ArrayList<Ship<T>> myShips;
-  
+
   public int getHeight() {
     return this.height;
   }
-  
-  public int getWidth(){
+
+  public int getWidth() {
     return this.width;
   }
-  
-  public BattleShipBoard(int w, int h){
-     /**
-   * Constructs a BattleShipBoard with the specified width and height
-   *
-   * @param w is the width of the newly constructed board.
-   * @param h is the height of the newly constructed board.
-   * @throws IllegalArgumentException if the width or height are less than or equal to zero.
-   */
+
+  public BattleShipBoard(int w, int h) {
+    /**
+     * Constructs a BattleShipBoard with the specified width and height
+     *
+     * @param w is the width of the newly constructed board.
+     * @param h is the height of the newly constructed board.
+     * @throws IllegalArgumentException if width or height is out of bound
+     */
     if (w <= 0) {
       throw new IllegalArgumentException("BattleShipBoard's width must be positive but is " + w);
     }
@@ -34,7 +34,7 @@ public class BattleShipBoard<T> implements Board<T> {
     this.myShips = new ArrayList<Ship<T>>();
   }
 
-  public boolean tryAddShip(Ship<T> toAdd){
+  public boolean tryAddShip(Ship<T> toAdd) {
     /**
      * Adds a general ship to the board
      *
@@ -48,10 +48,11 @@ public class BattleShipBoard<T> implements Board<T> {
     /**
      * Returns the infomation present at input coordinate
      *
-     * @params where is the coordinate entered to check whether the ship is present at that coordinate on the board
+     * @params where is the coordinate entered to check whether the ship is present
+     *         at that coordinate on the board
      */
-    for (Ship<T> s: myShips) {
-      if (s.occupiesCoordinates(where)){
+    for (Ship<T> s : myShips) {
+      if (s.occupiesCoordinates(where)) {
         return s.getDisplayInfoAt(where);
       }
     }

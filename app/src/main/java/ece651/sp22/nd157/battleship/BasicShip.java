@@ -1,7 +1,9 @@
 package ece651.sp22.nd157.battleship;
 
+import java.util.HashMap;
 
 public class BasicShip implements Ship<Character>{
+  HashMap<Coordinate, Boolean>  myPieces;
   private final Coordinate myLocation;
   /*
    * Constructor Field

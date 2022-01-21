@@ -27,10 +27,10 @@ public class BattleShipBoardTest {
      Coordinate c2 = new Coordinate(2,2);
      Coordinate c3 = new Coordinate(3,3);
      Coordinate c4 = new Coordinate(4,4);
-       Ship<Character> s1 = new BasicShip(c1);
-       Ship<Character> s2 = new BasicShip(c2);
-       Ship<Character> s3 = new BasicShip(c3);
-       Ship<Character> s4 = new BasicShip(c4);
+     Ship<Character> s1 = new RectangleShip<Character>(c1,'s','*');
+       Ship<Character> s2 = new RectangleShip<Character>(c2,'s','*');
+       Ship<Character> s3 = new RectangleShip<Character>(c3,'s','*');
+       Ship<Character> s4 = new RectangleShip<Character>(c4,'s','*');
        testBoard.tryAddShip(s1);
        expected[1][1]='s';
        checkWhatIsAtBoard(testBoard, expected);

@@ -57,8 +57,8 @@ public class BoardTextViewTest {
   @Test
     public void test_display_not_empty_2by2() {
         Board<Character> board = new BattleShipBoard<>(2, 2);
-        board.tryAddShip(new BasicShip(new Coordinate(0, 1)));
-        board.tryAddShip(new BasicShip(new Coordinate(1, 0)));
+        board.tryAddShip(new RectangleShip<Character>(new Coordinate(0, 1),'s','*'));
+        board.tryAddShip(new RectangleShip<Character>(new Coordinate(1, 0),'s','*'));
         assertEquals("  0|1\nA  |s A\nB s|  B\n  0|1\n", new BoardTextView(board).displayMyOwnBoard());
     }
 

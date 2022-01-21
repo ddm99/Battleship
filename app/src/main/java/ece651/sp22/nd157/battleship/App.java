@@ -12,10 +12,13 @@ import java.io.Reader;
 public class App {
 
   public static void main(String[] args) throws IOException {
+    /**
+     * 
+     *
+     */
     Board<Character> board = new BattleShipBoard<>(10, 20);
     App app = new App(board, new InputStreamReader(System.in), System.out);
     app.doOnePlacement();
-
   }
 
   final Board<Character> theBoard;
@@ -23,10 +26,14 @@ public class App {
   final BufferedReader inputReader;
   final PrintStream out;
 
-  /*
-   * Constructor Field
-   */
-  public App(Board<Character> theBoard, Reader inputSource, PrintStream out) {
+  public App(Board<Character> theBoard, Reader inputSource, PrintStream out){
+    /**
+     * Constructs the variable required to play the game
+     *
+     * @params theBoard is the board we want to use for the game
+     * @params inputSource is how we read input from user
+     * @params out is where we want to print the output of the game to
+     */
     this.theBoard = theBoard;
     this.view = new BoardTextView(theBoard);
     this.inputReader = new BufferedReader(inputSource);

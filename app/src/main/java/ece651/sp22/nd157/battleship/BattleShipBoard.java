@@ -6,16 +6,19 @@ public class BattleShipBoard<T> implements Board<T> {
   private final int width;
   private final int height;
   private final ArrayList<Ship<T>> myShips;
+  
   public int getHeight() {
     return this.height;
   }
+  
   public int getWidth(){
     return this.width;
   }
+  
   public BattleShipBoard(int w, int h){
      /**
-   * Constructs a BattleShipBoard with the specified width
-   * and height
+   * Constructs a BattleShipBoard with the specified width and height
+   *
    * @param w is the width of the newly constructed board.
    * @param h is the height of the newly constructed board.
    * @throws IllegalArgumentException if the width or height are less than or equal to zero.
@@ -32,11 +35,21 @@ public class BattleShipBoard<T> implements Board<T> {
   }
 
   public boolean tryAddShip(Ship<T> toAdd){
+    /**
+     * Adds a general ship to the board
+     *
+     * @params toAdd is the ship to be added to the array of myShips
+     */
     myShips.add(toAdd);
     return true;
   }
 
   public T whatIsAt(Coordinate where) {
+    /**
+     * Returns the infomation present at input coordinate
+     *
+     * @params where is the coordinate entered to check whether the ship is present at that coordinate on the board
+     */
     for (Ship<T> s: myShips) {
       if (s.occupiesCoordinates(where)){
         return s.getDisplayInfoAt(where);

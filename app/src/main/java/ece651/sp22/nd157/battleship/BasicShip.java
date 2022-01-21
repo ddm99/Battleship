@@ -1,6 +1,7 @@
 package ece651.sp22.nd157.battleship;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
@@ -31,7 +32,7 @@ public class BasicShip<T> implements Ship<T> {
     if (myPieces.containsKey(c)) {
       return;
     }
-    throw new IllegalArgumentException("You missed!");
+    throw new IllegalArgumentException("The target location is not a part of this ship!");
   }
 
   @Override
@@ -42,27 +43,50 @@ public class BasicShip<T> implements Ship<T> {
 
   @Override
   public boolean isSunk() {
-    // TODO Auto-generated method stub
-    return false;
+    /**
+     * Check whether all the coordinates of the ship have been hit
+     */
+    for (HashMap.Entry<Coordinate, Boolean> entry : myPieces.entrySet()) {
+      if (entry.getValue() == false) {
+        return false;
+      }
+    }
+    return true;
   }
 
   @Override
   public void recordHitAt(Coordinate where) {
-    // TODO Auto-generated method stub
-
+    /**
+     * Record the position of the part of the ship when it is hit
+     *
+     * @params where is the position the enemy fired at
+     */
+    checkCoordinateInThisShip(where);
+    myPieces.replace(where, true);
   }
 
   @Override
   public boolean wasHitAt(Coordinate where) {
-    // TODO Auto-generated method stub
-    return false;
+    /**
+     * Check whether the ship at given coordinate has been hit
+     *
+     * @params where is the coordinate to look at
+     */
+    checkCoordinateInThisShip(where);
+    return myPieces.get(where);
   }
 
   @Override
   public T getDisplayInfoAt(Coordinate where) {
-    // TODO this is not right. We need to
-    // look up the hit status of this coordinate
-    return myDisplayInfo.getInfo(where, false);
+    /**
+     * Obtain the display Info at target coordinate
+     *
+     * @params where is the coordinate we want to know about
+     */
+    if (wasHitAt(where)) {
+      return myDisplayInfo.getInfo(where, true);
+    } else {
+      return myDisplayInfo.getInfo(where, false);
+    }
   }
-
 }

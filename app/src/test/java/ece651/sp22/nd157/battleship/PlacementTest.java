@@ -17,10 +17,16 @@ public class PlacementTest {
     Placement  p4 = new Placement(c4, 'H');
     
     assertEquals(p1.hashCode(), p2.hashCode());
+    assertEquals(p1.getOrientation(),'V');
     assertNotEquals(p1.hashCode(), p3.hashCode());
     assertNotEquals(p1.hashCode(), p4.hashCode());
   }
 
+  @Test
+  public void test_invalid_constructor(){
+    assertThrows(IllegalArgumentException.class,() -> new Placement("A5V0"));
+    assertThrows(IllegalArgumentException.class,() -> new Placement("A5"));
+  }
 
   @Test
   public void test_equals(){
@@ -35,5 +41,6 @@ public class PlacementTest {
     assertEquals(p1,p2);
     assertNotEquals(p2,p3);
     assertNotEquals(p1,p4);
+    assertNotEquals(p1,c1);
   }
 }

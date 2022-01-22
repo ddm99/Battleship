@@ -3,13 +3,9 @@ package ece651.sp22.nd157.battleship;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public class BasicShip<T> implements Ship<T> {
+public abstract class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
   protected ShipDisplayInfo<T> myDisplayInfo;
-
-  public String getName(){
-    return "NULL";
-  }
 
   public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo) {
     /**
@@ -37,6 +33,15 @@ public class BasicShip<T> implements Ship<T> {
       return;
     }
     throw new IllegalArgumentException("The target location is not a part of this ship!");
+  }
+
+  public Iterable<Coordinate> getCoordinates() {
+    /**
+     * Get all of the Coordinates that this Ship occupies.
+     * 
+     * @return An Iterable with the coordinates that this Ship occupies
+     */
+    return myPieces.keySet();
   }
 
   @Override

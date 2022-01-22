@@ -1,0 +1,5 @@
+package ece651.sp22.nd157.battleship;
+
+public class PlacementRuleChecker {
+
+}

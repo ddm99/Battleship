@@ -27,6 +27,7 @@ public class App {
   final BoardTextView view;
   final BufferedReader inputReader;
   final PrintStream out;
+  final AbstractShipFactory<Character> shipFactory;
 
   public App(Board<Character> theBoard, Reader inputSource, PrintStream out) {
     /**
@@ -36,6 +37,7 @@ public class App {
      * @params inputSource is how we read input from user
      * @params out is where we want to print the output of the game to
      */
+    this.shipFactory = new V1ShipFactory();
     this.theBoard = theBoard;
     this.view = new BoardTextView(theBoard);
     this.inputReader = new BufferedReader(inputSource);
@@ -59,8 +61,8 @@ public class App {
      * readPlacement() to place ship accordingly
      */
     Placement p = readPlacement("Where would you like to put your ship?");
-    RectangleShip<Character> ship = new RectangleShip<Character>(p.getCoordinate(), 's', '*');
-    theBoard.tryAddShip(ship);
+    Ship<Character> s  = shipFactory.makeDestroyer(p);
+    theBoard.tryAddShip(s);
     out.print(view.displayMyOwnBoard());
   }
 

@@ -43,11 +43,11 @@ class AppTest {
     StringReader sr = new StringReader("A1V\n");
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
     PrintStream ps = new PrintStream(bytes, true);
-    Board<Character> b = new BattleShipBoard<Character>(2, 2);
+    Board<Character> b = new BattleShipBoard<Character>(3, 3);
     App app = new App(b, sr, ps);
     String prompt = "Where would you like to put your ship?";
     app.doOnePlacement();
-    assertEquals(prompt + "\n  0|1\nA  |s A\nB  |  B\n  0|1\n", bytes.toString());
+    assertEquals(prompt + "\n  0|1|2\nA  |d|  A\nB  |d|  B\nC  |d|  C\n  0|1|2\n", bytes.toString());
     bytes.reset(); // clear out bytes for next time around
   }
   

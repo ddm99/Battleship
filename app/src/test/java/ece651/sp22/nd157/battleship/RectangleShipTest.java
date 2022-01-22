@@ -24,12 +24,13 @@ public class RectangleShipTest {
   @Test
   public void test_super_constructor() {
     Coordinate upperLeft = new Coordinate(1, 2);
-    RectangleShip<Character> s = new RectangleShip<Character>(upperLeft, 1, 3,'s','*');
+    RectangleShip<Character> s = new RectangleShip<Character>("submarine",upperLeft, 1, 3,'s','*');
     Coordinate c1 = new Coordinate(1, 2);
     Coordinate c2 = new Coordinate(2, 2);
     Coordinate c3 = new Coordinate(3, 2);
     assert(s.occupiesCoordinates(c1));
     assert(s.occupiesCoordinates(c2));
     assert(s.occupiesCoordinates(c3));
+    assertEquals("submarine",s.getName());
     }
 }

@@ -7,6 +7,10 @@ public class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
   protected ShipDisplayInfo<T> myDisplayInfo;
 
+  public String getName(){
+    return "NULL";
+  }
+
   public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo) {
     /**
      * Constructs a BasicShip type with the specific set of coordinates

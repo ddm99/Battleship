@@ -3,26 +3,33 @@ package ece651.sp22.nd157.battleship;
 import java.util.HashSet;
 
 public class RectangleShip<T> extends BasicShip<T> {
-  public RectangleShip(Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo) {
+  final private String name;
+
+  public String getName(){
+    return name;
+  }
+  
+  public RectangleShip(String name,Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo) {
     /**
      * Constructs the coordinate and displayInfo of the ship using its parent's
      * constructor
      */
     super(makeCoords(upperLeft, width, height), myDisplayInfo);
+    this.name = name;
   }
 
-  public RectangleShip(Coordinate upperLeft, int width, int height, T data, T onHit) {
+  public RectangleShip(String name,Coordinate upperLeft, int width, int height, T data, T onHit) {
     /**
      * Helper constructor to simply the input of the main constructor
      */
-    this(upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+    this(name,upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
   }
 
   public RectangleShip(Coordinate upperLeft, T data, T onHit) {
     /**
      * Default helper constructor that initialize a 1x1 ship
      */
-    this(upperLeft, 1, 1, data, onHit);
+    this("testship",upperLeft, 1, 1, data, onHit);
   }
 
   static HashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height) {

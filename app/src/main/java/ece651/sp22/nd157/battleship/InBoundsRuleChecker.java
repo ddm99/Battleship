@@ -1,7 +1,11 @@
 package ece651.sp22.nd157.battleship;
 
 public class InBoundsRuleChecker<T> extends PlacementRuleChecker<T> {
+  
   public InBoundsRuleChecker(PlacementRuleChecker<T> next) {
+    /**
+     * Constructs the next placement checker
+     */
     super(next);
   }
 

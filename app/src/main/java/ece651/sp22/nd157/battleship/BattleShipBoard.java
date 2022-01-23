@@ -41,19 +41,23 @@ public class BattleShipBoard<T> implements Board<T> {
     /**
      * Constructs the Board with default rule checker
      *
-     * @param current rule chekcer is In bound rule checker
+     * @param default rule chekcer check for both in Bound and no collision
      */
-    this(w, h, new InBoundsRuleChecker<T>(null));
+    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<T>(null)));
   }
 
   public boolean tryAddShip(Ship<T> toAdd) {
     /**
-     * Adds a general ship to the board
+     * Check for validity of ship placement, then add to the board
      *
      * @params toAdd is the ship to be added to the array of myShips
+     * @return has the shipped being added
      */
-    myShips.add(toAdd);
-    return true;
+    if (placementChecker.checkPlacement(toAdd, this)) {
+      myShips.add(toAdd);
+      return true;
+    }
+    return false;
   }
 
   public T whatIsAt(Coordinate where) {

@@ -1,7 +1,6 @@
 package ece651.sp22.nd157.battleship;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class InBoundsRuleCheckerTest {
@@ -14,7 +13,7 @@ public class InBoundsRuleCheckerTest {
     AbstractShipFactory<Character> shipFactory = new V1ShipFactory();
     Ship<Character> s = shipFactory.makeDestroyer(p);
     Ship<Character> s1 = shipFactory.makeDestroyer(p1);
-    assertFalse(c.checkPlacement(s,board));
-    assert(c.checkPlacement(s1,board));
+    assertEquals("That placement is invalid: the ship goes off the right of the board.",c.checkPlacement(s,board));
+    assertEquals(null,c.checkPlacement(s1,board));
   }
 }

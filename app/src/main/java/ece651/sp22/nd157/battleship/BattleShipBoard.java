@@ -46,18 +46,18 @@ public class BattleShipBoard<T> implements Board<T> {
     this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<T>(null)));
   }
 
-  public boolean tryAddShip(Ship<T> toAdd) {
+  public String tryAddShip(Ship<T> toAdd) {
     /**
      * Check for validity of ship placement, then add to the board
      *
      * @params toAdd is the ship to be added to the array of myShips
      * @return has the shipped being added
      */
-    if (placementChecker.checkPlacement(toAdd, this)) {
+    if (placementChecker.checkPlacement(toAdd, this) == null) {
       myShips.add(toAdd);
-      return true;
+      return null;
     }
-    return false;
+    return placementChecker.checkPlacement(toAdd, this);
   }
 
   public T whatIsAt(Coordinate where) {

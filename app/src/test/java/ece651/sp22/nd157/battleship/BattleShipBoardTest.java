@@ -47,10 +47,19 @@ public class BattleShipBoardTest {
     AbstractShipFactory<Character> shipFactory = new V1ShipFactory();
     Placement p = new Placement(new Coordinate(1, 4), 'H');
     Placement p1 = new Placement(new Coordinate(2, 4), 'V');
+    Placement p2 = new Placement(new Coordinate(1, 2), 'H');
     Ship<Character> s5 = shipFactory.makeDestroyer(p);
     Ship<Character> s6 = shipFactory.makeDestroyer(p1);
+    Ship<Character> s7 = shipFactory.makeDestroyer(p2);
     assertFalse(testBoard.tryAddShip(s5));
     assertFalse(testBoard.tryAddShip(s6));
+    checkWhatIsAtBoard(testBoard, expected);
+    assert (testBoard.tryAddShip(s7));
+    expected[1][2] = 'd';
+    expected[1][3] = 'd';
+    expected[1][4] = 'd';
+    testBoard.tryAddShip(s5);
+    testBoard.tryAddShip(s6);
     checkWhatIsAtBoard(testBoard, expected);
   }
 

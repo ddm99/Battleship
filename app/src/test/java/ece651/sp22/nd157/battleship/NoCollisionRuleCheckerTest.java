@@ -24,7 +24,7 @@ public class NoCollisionRuleCheckerTest {
 public void both_rules() {
     PlacementRuleChecker<Character> c = new NoCollisionRuleChecker<Character>(null);
     PlacementRuleChecker<Character> c1 = new InBoundsRuleChecker<Character>(c);
-    Board<Character> board = new BattleShipBoard<>(4, 4);
+    Board<Character> board = new BattleShipBoard<>(5, 5);
     Placement p = new Placement(new Coordinate(1, 3), 'V');
     Placement p1 = new Placement(new Coordinate(1, 1), 'H');
     Placement p2 = new Placement(new Coordinate(4, 1), 'H');

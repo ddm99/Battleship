@@ -10,60 +10,36 @@ import java.io.PrintStream;
 import java.io.Reader;
 
 public class App {
+  private TextPlayer player1;
+  private TextPlayer player2;
+
+  public App(TextPlayer p1, TextPlayer p2) {
+    this.player1 = p1;
+    this.player2 = p2;
+  }
 
   public static void main(String[] args) throws IOException {
     /**
-     * The execution file for the game, it creates a board, then ask user to input
-     * where to place the ship
+     * The execution file for the game, it creates a board, initialize two players
+     * and ask them where to place the ship
      *
      * @params args is the argument that can be used to manipulate the program
      */
-    Board<Character> board = new BattleShipBoard<>(10, 20);
-    App app = new App(board, new InputStreamReader(System.in), System.out);
-    app.doOnePlacement();
+    Board<Character> b1 = new BattleShipBoard<Character>(10, 20);
+    Board<Character> b2 = new BattleShipBoard<Character>(10, 20);
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+    V1ShipFactory factory = new V1ShipFactory();
+    TextPlayer p1 = new TextPlayer("A", b1, input, System.out, factory);
+    TextPlayer p2 = new TextPlayer("B", b2, input, System.out, factory);
+    App app = new App(p1, p2);
+    app.doPlacementPhase();
   }
 
-  final Board<Character> theBoard;
-  final BoardTextView view;
-  final BufferedReader inputReader;
-  final PrintStream out;
-  final AbstractShipFactory<Character> shipFactory;
-
-  public App(Board<Character> theBoard, Reader inputSource, PrintStream out) {
+  public void doPlacementPhase() throws IOException {
     /**
-     * Constructs the variable required to play the game
-     *
-     * @params theBoard is the board we want to use for the game
-     * @params inputSource is how we read input from user
-     * @params out is where we want to print the output of the game to
+     * use the textplayer's method to prompt both users to place a ship
      */
-    this.shipFactory = new V1ShipFactory();
-    this.theBoard = theBoard;
-    this.view = new BoardTextView(theBoard);
-    this.inputReader = new BufferedReader(inputSource);
-    this.out = out;
+    player1.doPlacementPhase();
+    player2.doPlacementPhase();
   }
-
-  public Placement readPlacement(String prompt) throws IOException {
-    /**
-     * Read from Input and parse it to the placement of the ship
-     *
-     * @params prompt is the input string we read from user
-     */
-    out.println(prompt);
-    String s = inputReader.readLine();
-    return new Placement(s);
-  }
-
-  public void doOnePlacement() throws IOException {
-    /**
-     * This method output a prompt and read input from user, then it uses
-     * readPlacement() to place ship accordingly
-     */
-    Placement p = readPlacement("Where would you like to put your ship?");
-    Ship<Character> s  = shipFactory.makeDestroyer(p);
-    theBoard.tryAddShip(s);
-    out.print(view.displayMyOwnBoard());
-  }
-
 }

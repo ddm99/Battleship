@@ -18,8 +18,8 @@ public class InBoundsRuleChecker<T> extends PlacementRuleChecker<T> {
      */
     Iterable<Coordinate> set = theShip.getCoordinates();
     for (Coordinate current : set) {
-      if ((current.getRow() < 0) || (current.getRow() > theBoard.getHeight()) || (current.getColumn() < 0)
-          || (current.getColumn() > theBoard.getWidth())) {
+      if ((current.getRow() < 0) || (current.getRow() >= theBoard.getHeight()) || (current.getColumn() < 0)
+          || (current.getColumn() >= theBoard.getWidth())) {
         return false;
       }
     }

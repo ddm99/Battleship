@@ -17,7 +17,7 @@ public class TextPlayerTest {
   @Test
   void test_do_Placement_phase() throws IOException{
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-    TextPlayer player = createTextPlayer(10, 20, "A0H\nC8H\na4v\n", bytes);
+    TextPlayer player = createTextPlayer(10, 20, "A0H\nB0H\nC0H\nD0H\nE0H\nF0H\nG0H\nH0H\nI0H\nJ0H\n", bytes);
     InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output1.txt");
     assertNotNull(expectedStream);
     player.doPlacementPhase();
@@ -50,7 +50,8 @@ public class TextPlayerTest {
     TextPlayer player = createTextPlayer(10, 20, "B8H\na4v\n", bytes);
     InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output2.txt");
     assertNotNull(expectedStream);
-    player.doOnePlacement();
+    V1ShipFactory shipFactory = new V1ShipFactory();
+    player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p));
     String expected = new String(expectedStream.readAllBytes());
     String actual = bytes.toString();
     assertEquals(expected, actual);

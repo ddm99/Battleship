@@ -2,9 +2,11 @@ package ece651.sp22.nd157.battleship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -55,6 +57,15 @@ public class TextPlayerTest {
     String expected = new String(expectedStream.readAllBytes());
     String actual = bytes.toString();
     assertEquals(expected, actual);
+    bytes.reset(); // clear out bytes for next time around
+  }
+
+  @Test
+  public void test_read_eof() throws IOException {
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    V1ShipFactory shipFactory = new V1ShipFactory();
+    TextPlayer player = createTextPlayer(10, 20, "", bytes);
+    assertThrows(EOFException.class, () -> player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p)));
     bytes.reset(); // clear out bytes for next time around
   }
 

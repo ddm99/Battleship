@@ -1,6 +1,7 @@
 package ece651.sp22.nd157.battleship;
 
 import java.io.BufferedReader;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.Reader;
@@ -72,6 +73,9 @@ public class TextPlayer {
      */
     out.println(prompt);
     String s = inputReader.readLine();
+    if (s == null) {
+      throw new EOFException();
+    }
     return new Placement(s);
   }
 
@@ -95,6 +99,9 @@ public class TextPlayer {
     } catch (IllegalArgumentException e) {
       out.println(e.getMessage());
       doOnePlacement(shipName, createFn);
+    } catch (EOFException eof) {
+      out.println("placement phase done");
+      throw eof;
     }
   }
 
@@ -116,6 +123,7 @@ public class TextPlayer {
     out.println("2 \"Carriers\" that are 1x6\n");
     for (int i = 0; i < shipsToPlace.size(); i++) {
       doOnePlacement(shipsToPlace.get(i), shipCreationFns.get(shipsToPlace.get(i)));
+
     }
   }
 }

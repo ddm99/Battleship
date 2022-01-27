@@ -16,8 +16,9 @@ public abstract class PlacementRuleChecker<T> {
     
     public String checkPlacement (Ship<T> theShip, Board<T> theBoard) {
     //if we fail our own rule: stop the placement is not legal
-    if (checkMyRule(theShip, theBoard) != null) {
-      return checkMyRule(theShip, theBoard);
+      String placementProblem = checkMyRule(theShip, theBoard);
+    if (placementProblem != null) {
+      return placementProblem;
     }
     //other wise, ask the rest of the chain.
     if (next != null) {

@@ -20,8 +20,7 @@ public class TextPlayer {
   final HashMap<String, Function<Placement, Ship<Character>>> shipCreationFns;
 
   public TextPlayer(String name, Board<Character> theBoard, Reader inputSource, PrintStream out,
-      AbstractShipFactory<Character> shipFactory
-      ) {
+      AbstractShipFactory<Character> shipFactory) {
     /**
      * Constructs the class with name of the player
      *
@@ -37,10 +36,10 @@ public class TextPlayer {
     this.theBoard = theBoard;
     this.view = new BoardTextView(theBoard);
     this.inputReader = (BufferedReader) inputSource;
-    //this.inputReader = new BufferedReader(inputSource);
+    // this.inputReader = new BufferedReader(inputSource);
     this.out = out;
     this.shipsToPlace = new ArrayList<String>();
-    this.shipCreationFns = new HashMap<String, Function<Placement,Ship<Character>>>();
+    this.shipCreationFns = new HashMap<String, Function<Placement, Ship<Character>>>();
     setupShipCreationList();
     setupShipCreationMap();
   }
@@ -83,10 +82,20 @@ public class TextPlayer {
      *
      * @throw Input or Output may fail
      */
-    Placement p = readPlacement("Player " + name + " where do you want to place a " + shipName + "?");
-    Ship<Character> s = createFn.apply(p);
-    theBoard.tryAddShip(s);
-    out.print(view.displayMyOwnBoard());
+    try {
+      Placement p = readPlacement("Player " + name + " where do you want to place a " + shipName + "?");
+      Ship<Character> s = createFn.apply(p);
+      String placementProblem = theBoard.tryAddShip(s);
+      if (placementProblem != null) {
+        out.println(placementProblem);
+        doOnePlacement(shipName, createFn);
+      } else {
+        out.print(view.displayMyOwnBoard());
+      }
+    } catch (IllegalArgumentException e) {
+      out.println(e.getMessage());
+      doOnePlacement(shipName, createFn);
+    }
   }
 
   public void doPlacementPhase() throws IOException {

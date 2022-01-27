@@ -53,11 +53,12 @@ public class BattleShipBoard<T> implements Board<T> {
      * @params toAdd is the ship to be added to the array of myShips
      * @return has the shipped being added
      */
-    if (placementChecker.checkPlacement(toAdd, this) == null) {
+    String placementProblem = placementChecker.checkPlacement(toAdd, this);
+    if (placementProblem == null) {
       myShips.add(toAdd);
       return null;
     }
-    return placementChecker.checkPlacement(toAdd, this);
+    return placementProblem;
   }
 
   public T whatIsAt(Coordinate where) {

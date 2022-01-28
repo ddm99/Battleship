@@ -66,6 +66,38 @@ public class BoardTextView {
     return ans.toString();
   }
 
+  public String displayMyBoardWithEnemyNextToIt(BoardTextView enemyView, String myHeader, String enemyHeader) {
+    String myBoard = this.displayMyOwnBoard();
+    String enemyBoard = enemyView.displayEnemyBoard();
+    String [] mylines = myBoard.split("\n");
+    String [] enemylines = enemyBoard.split("\n");
+    StringBuilder ans = new StringBuilder("");
+    ans.append(makeLabel(myHeader, enemyHeader));
+    for (int i = 0; i<mylines.length;i++){
+      ans.append(mylines[i]);
+      if((i == 0)||(i==mylines.length-1)){
+        ans.append("  ");
+      }
+      ans.append("                ");
+      ans.append(enemylines[i]);
+      ans.append("\n");
+    }
+    return ans.toString();
+  }
+
+  String makeLabel(String myHeader, String enemyHeader){
+    StringBuilder ans = new StringBuilder("");
+    ans.append("     ");
+    ans.append(myHeader);
+    int spacebtw = 2 * toDisplay.getWidth() + 22 -5 -myHeader.length();
+    for(int i =0;i<spacebtw;i++){
+      ans.append(" ");
+    }
+    ans.append(enemyHeader);
+    ans.append("\n");
+    return ans.toString();
+  }
+  
   String makeHeader() {
     /**
      * This makes the header line, e.g. 0|1|2|3|4\n

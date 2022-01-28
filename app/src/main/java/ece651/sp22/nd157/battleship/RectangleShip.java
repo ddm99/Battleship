@@ -9,22 +9,23 @@ public class RectangleShip<T> extends BasicShip<T> {
     return name;
   }
   
-  public RectangleShip(String name,Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo) {
+  public RectangleShip(String name,Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> enemDisplayInfo) {
     /**
      * Constructs the coordinate and displayInfo of the ship using its parent's
      * constructor
      */
-    super(makeCoords(upperLeft, width, height), myDisplayInfo);
+    super(makeCoords(upperLeft, width, height), myDisplayInfo,enemDisplayInfo);
     this.name = name;
   }
 
-  public RectangleShip(String name,Coordinate upperLeft, int width, int height, T data, T onHit) {
-    /**
-     * Helper constructor to simply the input of the main constructor
-     */
-    this(name,upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+ public RectangleShip(String name, Coordinate upperLeft, int width, int height, T data, T onHit) {
+   /**
+    * Constrcuts this class from the given info
+    */
+    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit),
+        new SimpleShipDisplayInfo<T>(null, data));
   }
-
+  
   public RectangleShip(Coordinate upperLeft, T data, T onHit) {
     /**
      * Default helper constructor that initialize a 1x1 ship

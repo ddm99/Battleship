@@ -37,7 +37,7 @@ public class V1ShipFactoryTest {
   private void checkShip(Ship<Character> testShip, String expectedName,
                          char expectedLetter, Coordinate... expectedLocs){
     for(int i =0; i < expectedLocs.length; i++){
-      assertEquals(expectedLetter, testShip.getDisplayInfoAt(expectedLocs[i]));
+      assertEquals(expectedLetter, testShip.getDisplayInfoAt(expectedLocs[i],true));
             assertEquals(expectedName, testShip.getName());
         }
   }

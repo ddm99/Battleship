@@ -10,7 +10,7 @@ public class NoCollisionRuleCheckerTest {
   @Test
   public void test_rules() {
     PlacementRuleChecker<Character> c = new NoCollisionRuleChecker<Character>(null);
-    Board<Character> board = new BattleShipBoard<>(5, 5);
+    Board<Character> board = new BattleShipBoard<>(5, 5,'X');
     Placement p = new Placement(new Coordinate(1, 3), 'V');// initial ship
     Placement p1 = new Placement(new Coordinate(1, 1), 'H');// collision
     Placement p2 = new Placement(new Coordinate(4, 4), 'H');// out of board right

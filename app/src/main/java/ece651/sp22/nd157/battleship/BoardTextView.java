@@ -1,5 +1,7 @@
 package ece651.sp22.nd157.battleship;
 
+import java.util.function.Function;
+
 /**
  * This class handles textual display of a Board (i.e., converting it to a
  * string to show to the user). It supports two ways to display the Board: one
@@ -24,8 +26,16 @@ public class BoardTextView {
           "Board must be no larger than 10x26, but is " + toDisplay.getWidth() + "x" + toDisplay.getHeight());
     }
   }
-
+  
   public String displayMyOwnBoard() {
+    return displayAnyBoard((c)->toDisplay.whatIsAtForSelf(c));
+  }
+
+  public String displayEnemyBoard(){
+    return displayAnyBoard((c)->toDisplay.whatIsAtForEnemy(c));
+  }
+
+  protected String displayAnyBoard(Function<Coordinate, Character> getSquareFn){
     /**
      * Display the board according to the rules, including axis labels and ship info
      */
@@ -40,8 +50,8 @@ public class BoardTextView {
       line.append(" ");
       for (int j = 0; j < toDisplay.getWidth(); j++) {
         line.append(sep);
-        if (toDisplay.whatIsAt(new Coordinate(i, j)) != null) {
-          line.append(toDisplay.whatIsAt(new Coordinate(i, j)).toString());
+        if (getSquareFn.apply(new Coordinate(i, j)) != null) {
+          line.append(getSquareFn.apply(new Coordinate(i,j)));
         } else {
           line.append(" ");
         }

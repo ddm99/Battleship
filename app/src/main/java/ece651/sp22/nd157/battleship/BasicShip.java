@@ -6,8 +6,9 @@ import java.util.Iterator;
 public abstract class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
   protected ShipDisplayInfo<T> myDisplayInfo;
+  protected ShipDisplayInfo<T> enemyDisplayInfo;
 
-  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo) {
+  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> enemyDisplayInfo) {
     /**
      * Constructs a BasicShip type with the specific set of coordinates
      * 
@@ -16,6 +17,7 @@ public abstract class BasicShip<T> implements Ship<T> {
      *                      coordinate
      */
     this.myDisplayInfo = myDisplayInfo;
+    this.enemyDisplayInfo = enemyDisplayInfo;
     myPieces = new HashMap<Coordinate, Boolean>();
     for (Coordinate c : where) {
       myPieces.put(c, false);
@@ -46,7 +48,9 @@ public abstract class BasicShip<T> implements Ship<T> {
 
   @Override
   public boolean occupiesCoordinates(Coordinate where) {
-    // TODO Auto-generated method stub
+    /**
+     * Check if the target coordinate occupied by a ship
+     */
     return myPieces.containsKey(where);
   }
 
@@ -86,16 +90,25 @@ public abstract class BasicShip<T> implements Ship<T> {
   }
 
   @Override
-  public T getDisplayInfoAt(Coordinate where) {
+  public T getDisplayInfoAt(Coordinate where, boolean myShip) {
     /**
      * Obtain the display Info at target coordinate
      *
+     * @param myShip is used to detemine which set of info to display
      * @params where is the coordinate we want to know about
      */
     if (wasHitAt(where)) {
-      return myDisplayInfo.getInfo(where, true);
+      if (myShip) {
+        return myDisplayInfo.getInfo(where, true);
+      } else {
+        return enemyDisplayInfo.getInfo(where, true);
+      }
     } else {
-      return myDisplayInfo.getInfo(where, false);
+      if (myShip) {
+        return myDisplayInfo.getInfo(where, false);
+      } else {
+        return enemyDisplayInfo.getInfo(where, false);
+      }
     }
   }
 }

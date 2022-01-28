@@ -17,7 +17,7 @@ public class NoCollisionRuleChecker<T> extends PlacementRuleChecker<T> {
      * collision between newly placed ship and existing ships
      */
     for(Coordinate c:theShip.getCoordinates()){
-      if(theBoard.whatIsAt(c) != null){
+      if(theBoard.whatIsAtForSelf(c) != null){
         return "That placement is invalid: the ship overlaps another ship.";
       }
     }

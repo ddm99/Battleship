@@ -45,8 +45,10 @@ public class BasicShipTest {
     Coordinate c3 = new Coordinate(1, 3);
     RectangleShip<Character> s = new RectangleShip<Character>("submarine", c1, 3, 1, 's', '*');
     s.recordHitAt(c2);
-    assertEquals('*', s.getDisplayInfoAt(c2));
-    assertEquals('s', s.getDisplayInfoAt(c3));
+    assertEquals('*', s.getDisplayInfoAt(c2,true));
+    assertEquals('s', s.getDisplayInfoAt(c3,true));
+    assertEquals('s', s.getDisplayInfoAt(c2,false));
+    assertEquals(null, s.getDisplayInfoAt(c3,false));
   }
 
   @Test

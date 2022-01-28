@@ -1,12 +1,15 @@
 package ece651.sp22.nd157.battleship;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class BattleShipBoard<T> implements Board<T> {
   private final int width;
   private final int height;
   private final ArrayList<Ship<T>> myShips;
   private final PlacementRuleChecker<T> placementChecker;
+  HashSet<Coordinate> enemyMisses;
+  final T missInfo;
 
   public int getHeight() {
     return this.height;
@@ -16,7 +19,7 @@ public class BattleShipBoard<T> implements Board<T> {
     return this.width;
   }
 
-  public BattleShipBoard(int w, int h, PlacementRuleChecker<T> rule) {
+  public BattleShipBoard(int w, int h, PlacementRuleChecker<T> rule, T missInfo) {
     /**
      * Constructs a BattleShipBoard with the specified width and height
      *
@@ -35,15 +38,17 @@ public class BattleShipBoard<T> implements Board<T> {
     this.height = h;
     this.myShips = new ArrayList<Ship<T>>();
     placementChecker = rule;
+    this.enemyMisses = new HashSet<Coordinate>();
+    this.missInfo = missInfo;
   }
 
-  public BattleShipBoard(int w, int h) {
+  public BattleShipBoard(int w, int h,T missInfo) {
     /**
      * Constructs the Board with default rule checker
      *
      * @param default rule chekcer check for both in Bound and no collision
      */
-    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<T>(null)));
+    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<T>(null)),missInfo);
   }
 
   public String tryAddShip(Ship<T> toAdd) {
@@ -61,7 +66,15 @@ public class BattleShipBoard<T> implements Board<T> {
     return placementProblem;
   }
 
-  public T whatIsAt(Coordinate where) {
+  public T whatIsAtForSelf(Coordinate where) {
+    return whatIsAt(where, true);
+  }
+
+  public T whatIsAtForEnemy(Coordinate where) {
+    return whatIsAt(where, false);
+  }
+
+  protected T whatIsAt(Coordinate where, boolean isSelf) {
     /**
      * Returns the infomation present at input coordinate
      *
@@ -70,10 +83,29 @@ public class BattleShipBoard<T> implements Board<T> {
      */
     for (Ship<T> s : myShips) {
       if (s.occupiesCoordinates(where)) {
-        return s.getDisplayInfoAt(where);
+        return s.getDisplayInfoAt(where, isSelf);
       }
+    }
+    if((enemyMisses.contains( where)) &&(isSelf==false)){
+      return missInfo;
     }
     return null;
   }
 
+  public Ship<T> fireAt(Coordinate c) {
+    /**
+     * search for any ship that occupies coordinate c, if one is found, that ship is
+     * hit, is not, add to enemy misses
+     *
+     * @param c is the coordinate we fire at
+     */
+    for (Ship<T> s : myShips) {
+      if (s.occupiesCoordinates(c)) {
+        s.recordHitAt(c);
+        return s;
+      }
+    }
+    enemyMisses.add(c);
+    return null;
+  }
 }

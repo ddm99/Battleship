@@ -126,4 +126,23 @@ public class BattleShipBoardTest {
     expected[1][4] = 'X';
     checkWhatIsAtBoard(testBoard, expected, false);
   }
+
+  @Test
+  public void test_is_lost() {
+    Board<Character> testBoard = new BattleShipBoard<Character>(5, 5, 'X');
+    V1ShipFactory shipFactory = new V1ShipFactory();
+    Ship<Character> s = shipFactory.makeSubmarine(new Placement(new Coordinate(0, 0), 'V'));
+    Ship<Character> s1 = shipFactory.makeSubmarine(new Placement(new Coordinate(0, 1), 'V'));
+    testBoard.tryAddShip(s);
+    testBoard.tryAddShip(s1);
+    testBoard.fireAt(new Coordinate(0, 0));
+    assertFalse(testBoard.isLost());
+    testBoard.fireAt(new Coordinate(0, 1));
+    assertFalse(testBoard.isLost());
+    testBoard.fireAt(new Coordinate(1, 0));
+    testBoard.fireAt(new Coordinate(2, 2));
+    assertFalse(testBoard.isLost());
+    testBoard.fireAt(new Coordinate(1, 1));
+    assert (testBoard.isLost());
+  }
 }

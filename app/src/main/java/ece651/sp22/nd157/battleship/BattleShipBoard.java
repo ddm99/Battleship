@@ -108,4 +108,16 @@ public class BattleShipBoard<T> implements Board<T> {
     enemyMisses.add(c);
     return null;
   }
+
+  public boolean isLost(){
+    /**
+     * Check if every ship on this board has been sunk
+     */
+    for(Ship<T> s:myShips){
+      if(s.isSunk()==false){
+        return false;
+      }
+    }
+    return true;
+  }
 }

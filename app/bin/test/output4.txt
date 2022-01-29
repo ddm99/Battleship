@@ -1,0 +1,2 @@
+Player A where do you want to place a Destroyer?
+placement phase ended!

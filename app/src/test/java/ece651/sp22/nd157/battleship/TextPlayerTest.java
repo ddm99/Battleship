@@ -17,6 +17,37 @@ import org.junit.jupiter.api.Test;
 
 public class TextPlayerTest {
   @Test
+  public void play_one_turn_eof(){
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player1 = createTextPlayer(10, 20, "", bytes);
+    Board<Character> b =new BattleShipBoard<Character>(10,20,'X');
+    BoardTextView view = new BoardTextView(b);
+    assertThrows(EOFException.class,() -> player1.playOneTurn(b, view));
+  }
+  
+  @Test
+  public void test_play_one_turn()throws IOException{
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    ByteArrayOutputStream bytes2 = new ByteArrayOutputStream();
+    TextPlayer player1 = createTextPlayer(10, 20, "A0H\nB0\nC0\nD0\nE0\nH0\nJ0\nZ0\nS0", bytes);
+    TextPlayer player2 = createTextPlayer(10, 20, "A0H\nB0H\nC0H\nD0H\nE0H\nF0H\nG0H\nH0H\nI0H\nJ0H\n", bytes2);
+    player2.doPlacementPhase();
+    InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output3.txt");
+    assertNotNull(expectedStream);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    player1.playOneTurn(player2.theBoard, player2.view);
+    String expected = new String(expectedStream.readAllBytes());
+    String actual = bytes.toString();
+    assertEquals(expected, actual);
+    bytes.reset(); // clear out bytes for next time around
+  }
+  
+  @Test
   void test_do_Placement_phase() throws IOException{
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
     TextPlayer player = createTextPlayer(10, 20, "A0H\nB0H\nC0H\nD0H\nE0H\nF0H\nG0H\nH0H\nI0H\nJ0H\n", bytes);
@@ -63,10 +94,11 @@ public class TextPlayerTest {
   @Test
   public void test_read_eof() throws IOException {
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-    V1ShipFactory shipFactory = new V1ShipFactory();
     TextPlayer player = createTextPlayer(10, 20, "", bytes);
-    assertThrows(EOFException.class, () -> player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p)));
-    bytes.reset(); // clear out bytes for next time around
+    InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output4.txt");
+    assertNotNull(expectedStream);
+    V1ShipFactory shipFactory = new V1ShipFactory();
+    assertThrows(EOFException.class,() -> player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p)));
   }
 
   private TextPlayer createTextPlayer(int w, int h, String inputData, OutputStream bytes) {

@@ -16,7 +16,7 @@ public class TextPlayer {
   final BufferedReader inputReader;
   final PrintStream out;
   final AbstractShipFactory<Character> shipFactory;
-  private String name;
+  String name;
   final ArrayList<String> shipsToPlace;
   final HashMap<String, Function<Placement, Ship<Character>>> shipCreationFns;
 
@@ -99,10 +99,9 @@ public class TextPlayer {
     } catch (IllegalArgumentException e) {
       out.println(e.getMessage());
       doOnePlacement(shipName, createFn);
-    }
-    catch (EOFException eof) {
-      out.println("placement phase done");
-      throw eof;
+    } catch (EOFException eof) {
+      out.println("placement phase ended!");
+      throw new EOFException();
     }
   }
 
@@ -125,7 +124,39 @@ public class TextPlayer {
     for (int i = 0; i < shipsToPlace.size(); i++) {
       doOnePlacement(shipsToPlace.get(i), shipCreationFns.get(shipsToPlace.get(i)));
     }
-    
-    
   }
+
+  public void playOneTurn(Board<Character> enemyBoard, BoardTextView enemyBoardView) throws IOException {
+    out.print("Attacking Phase\n");
+    try {
+      String s = inputReader.readLine();
+      if (s == null) {
+        throw new EOFException("No more input to read!");
+      }
+      Coordinate c = new Coordinate(s);
+      if ((c.getRow() >= enemyBoard.getHeight()) || (c.getRow() < 0) || (c.getColumn() < 0)
+          || (c.getColumn() >= enemyBoard.getWidth())) {
+        throw new IllegalArgumentException("The Coordinate you fire at is off the board!");
+      }
+      enemyBoard.fireAt(c);
+      if(enemyBoard.whatIsAtForEnemy(c)=='b'){
+            out.println("You hit a battleship!");
+        }else if (enemyBoard.whatIsAtForEnemy(c)=='s'){
+            out.println("You hit a submarine!");
+        }else if (enemyBoard.whatIsAtForEnemy(c)=='c'){
+            out.println("You hit a carrier!");
+        }else if(enemyBoard.whatIsAtForEnemy(c)=='d'){
+            out.println("You hit a destroyer!");
+        }else{
+        out.println("You Missed!");
+      } 
+    } catch (IllegalArgumentException e) {
+      out.println(e.getMessage());
+      playOneTurn(enemyBoard, enemyBoardView);
+    } catch (EOFException e) {
+      out.println(e.getMessage());
+      throw new EOFException();
+    }
+  }
+
 }

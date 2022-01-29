@@ -4,10 +4,9 @@
 package ece651.sp22.nd157.battleship;
 
 import java.io.BufferedReader;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.io.Reader;
 
 public class App {
   private TextPlayer player1;
@@ -25,14 +24,19 @@ public class App {
      *
      * @params args is the argument that can be used to manipulate the program
      */
-    Board<Character> b1 = new BattleShipBoard<Character>(10, 20,'X');
-    Board<Character> b2 = new BattleShipBoard<Character>(10, 20,'X');
+    Board<Character> b1 = new BattleShipBoard<Character>(10, 20, 'X');
+    Board<Character> b2 = new BattleShipBoard<Character>(10, 20, 'X');
     BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
     V1ShipFactory factory = new V1ShipFactory();
     TextPlayer p1 = new TextPlayer("A", b1, input, System.out, factory);
     TextPlayer p2 = new TextPlayer("B", b2, input, System.out, factory);
     App app = new App(p1, p2);
+    try{
     app.doPlacementPhase();
+    app.doAttackingPhase();
+    }catch(EOFException e){
+      return;
+    }
   }
 
   public void doPlacementPhase() throws IOException {
@@ -41,5 +45,28 @@ public class App {
      */
     player1.doPlacementPhase();
     player2.doPlacementPhase();
+  }
+
+  protected void doRound(TextPlayer me,TextPlayer enemy) throws IOException {
+    me.out.println("Player " + me.name + "'s turn:");
+    me.out.println(me.view.displayMyBoardWithEnemyNextToIt(enemy.view, "Your Ocean", "Player" + enemy.name+"'s Ocean"));
+    me.playOneTurn(enemy.theBoard, enemy.view);
+  }
+
+  public void doAttackingPhase() throws IOException {
+    while (true) {
+      doRound(player1,player2);
+      if (player2.theBoard.isLost()) {
+        player2.out.println("Player "+player1.name+" Win!");
+        player1.out.println("Player "+player2.name+" Lost!");
+        return;
+      }
+      doRound(player2,player1);
+      if (player1.theBoard.isLost()) {
+        player1.out.println("Player "+player2.name+" Win!");
+        player2.out.println("Player "+player1.name+" Lost!");
+        return;
+      }
+    }
   }
 }

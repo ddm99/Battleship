@@ -1,0 +1,18 @@
+Attacking Phase
+Invalid Size of Input!
+Attacking Phase
+You hit a submarine!
+Attacking Phase
+You hit a destroyer!
+Attacking Phase
+You hit a destroyer!
+Attacking Phase
+You hit a destroyer!
+Attacking Phase
+You hit a battleship!
+Attacking Phase
+You hit a carrier!
+Attacking Phase
+The Coordinate you fire at is off the board!
+Attacking Phase
+You Missed!

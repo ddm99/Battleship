@@ -32,35 +32,8 @@ at M4 and going to the right.  You have
 2 "Carriers" that are 1x6
 
 Player A where do you want to place a Submarine?
-Incorrect orientation!
-Player A where do you want to place a Submarine?
-Incorrect orientation!
-Player A where do you want to place a Submarine?
   0|1|2|3|4|5|6|7|8|9
-A  | |s|s| | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | | | | | | |  D
-E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H  | | | | | | | | |  H
-I  | | | | | | | | |  I
-J  | | | | | | | | |  J
-K  | | | | | | | | |  K
-L  | | | | | | | | |  L
-M  | | | | | | | | |  M
-N  | | | | | | | | |  N
-O  | | | | | | | | |  O
-P  | | | | | | | | |  P
-Q  | | | | | | | | |  Q
-R  | | | | | | | | |  R
-S  | | | | | | | | |  S
-T  | | | | | | | | |  T
-  0|1|2|3|4|5|6|7|8|9
-Player A where do you want to place a Submarine?
-  0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
+A s| | | | | | | | |  A
 B s| | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
@@ -81,12 +54,12 @@ R  | | | | | | | | |  R
 S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
-Player A where do you want to place a Destroyer?
+Player A where do you want to place a Submarine?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C  | | | | | | | | |  C
+D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
@@ -106,16 +79,16 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s|d| | | | | | |  A
+B s|s|d| | | | | | |  B
+C  | |d| | | | | | |  C
+D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
-H  | | | | | |d| | |  H
-I  | | | | | |d| | |  I
-J  | | | | | |d| | |  J
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
 K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
@@ -128,24 +101,20 @@ S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where do you want to place a Destroyer?
-That placement is invalid: the ship goes off the bottom of the board.
-Player A where do you want to place a Destroyer?
-That placement is invalid: the ship overlaps another ship.
-Player A where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s|d|d| | | | | |  A
+B s|s|d|d| | | | | |  B
+C  | |d|d| | | | | |  C
+D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
-H  | | | | | |d| | |  H
-I  | | | | | |d| | |  I
-J  | | | | | |d| | |  J
-K  | | | | | | | | |d K
-L  | | | | | | | | |d L
-M  | | | | | | | | |d M
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
 P  | | | | | | | | |  P
@@ -154,21 +123,21 @@ R  | | | | | | | | |  R
 S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
-Player A where do you want to place a Battleship?
+Player A where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s|d|d|d| | | | |  A
+B s|s|d|d|d| | | | |  B
+C  | |d|d|d| | | | |  C
+D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
-H  | | | | | |d| | |  H
-I  | | | | | |d| | |  I
-J  | | | | | |d| | |  J
-K  | | | | | | | | |d K
-L  | | | | | | | | |d L
-M b|b|b|b| | | | | |d M
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
 P  | | | | | | | | |  P
@@ -179,19 +148,19 @@ T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where do you want to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s|d|d|d|b| | | |  A
+B s|s|d|d|d|b| | | |  B
+C  | |d|d|d|b| | | |  C
+D  | | | | |b| | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
-G  | | | |b|b|b|b| |  G
-H  | | | | | |d| | |  H
-I  | | | | | |d| | |  I
-J  | | | | | |d| | |  J
-K  | | | | | | | | |d K
-L  | | | | | | | | |d L
-M b|b|b|b| | | | | |d M
+G  | | | | | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
 P  | | | | | | | | |  P
@@ -201,79 +170,96 @@ S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where do you want to place a Battleship?
-That placement is invalid: the ship overlaps another ship.
-Player A where do you want to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s|d|d|d|b|b| | |  A
+B s|s|d|d|d|b|b| | |  B
+C  | |d|d|d|b|b| | |  C
+D  | | | | |b|b| | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
-G  | | | |b|b|b|b| |  G
-H  | | | | | |d| | |  H
-I  | | | | | |d| | |  I
-J  | | | | | |d| | |  J
-K  | | | | | | | | |d K
-L  | | | | | | | | |d L
-M b|b|b|b| | | | | |d M
+G  | | | | | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
 S  | | | | | | | | |  S
-T b|b|b|b| | | | | |  T
+T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
-Player A where do you want to place a Carrier?
-That placement is invalid: the ship goes off the bottom of the board.
-Player A where do you want to place a Carrier?
-That placement is invalid: the ship goes off the bottom of the board.
-Player A where do you want to place a Carrier?
+Player A where do you want to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
+A s|s|d|d|d|b|b|b| |  A
+B s|s|d|d|d|b|b|b| |  B
+C  | |d|d|d|b|b|b| |  C
+D  | | | | |b|b|b| |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
-G  | | | |b|b|b|b| |  G
-H  | | | | | |d| | |  H
-I  | | | | | |d| | |  I
-J  | | | | | |d| | |  J
-K  | | | | | | | | |d K
-L  | | | | | | | | |d L
-M b|b|b|b| | | | | |d M
+G  | | | | | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | |c|c|c|c|c|c O
+O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
 S  | | | | | | | | |  S
-T b|b|b|b| | | | | |  T
+T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player A where do you want to place a Carrier?
   0|1|2|3|4|5|6|7|8|9
-A s| |s|s| | | | | |  A
-B s| | | | | | |d| |  B
-C  | | | | | | |d| |  C
-D  | | | | | | |d| |  D
-E  | | | | | | | | |  E
-F c| | | | | | | | |  F
-G c| | | |b|b|b|b| |  G
-H c| | | | | |d| | |  H
-I c| | | | | |d| | |  I
-J c| | | | | |d| | |  J
-K c| | | | | | | | |d K
-L  | | | | | | | | |d L
-M b|b|b|b| | | | | |d M
+A s|s|d|d|d|b|b|b|c|  A
+B s|s|d|d|d|b|b|b|c|  B
+C  | |d|d|d|b|b|b|c|  C
+D  | | | | |b|b|b|c|  D
+E  | | | | | | | |c|  E
+F  | | | | | | | |c|  F
+G  | | | | | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | |c|c|c|c|c|c O
+O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
 S  | | | | | | | | |  S
-T b|b|b|b| | | | | |  T
+T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9
+Player A where do you want to place a Carrier?
+  0|1|2|3|4|5|6|7|8|9
+A s|s|d|d|d|b|b|b|c|c A
+B s|s|d|d|d|b|b|b|c|c B
+C  | |d|d|d|b|b|b|c|c C
+D  | | | | |b|b|b|c|c D
+E  | | | | | | | |c|c E
+F  | | | | | | | |c|c F
+G  | | | | | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
+N  | | | | | | | | |  N
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R
+S  | | | | | | | | |  S
+T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
   0|1|2|3|4|5|6|7|8|9
 A  | | | | | | | | |  A
@@ -310,7 +296,7 @@ at M4 and going to the right.  You have
 
 Player B where do you want to place a Submarine?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
+A s|s| | | | | | | |  A
 B  | | | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
@@ -328,13 +314,13 @@ O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| | | | | | | |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Submarine?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
 C  | | | | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
@@ -351,14 +337,14 @@ O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s| | | | |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
@@ -374,15 +360,15 @@ O  | | | | | | | | |  O
 P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | | | | | | |  D
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
@@ -394,19 +380,19 @@ L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
 O  | | | | | | | | |  O
-P  |d|d|d| | | | | |  P
+P  | | | | | | | | |  P
 Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | | | | | | |  D
-E  | | | | | | | | |  E
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
+E d|d|d| | | | | | |  E
 F  | | | | | | | | |  F
 G  | | | | | | | | |  G
 H  | | | | | | | | |  H
@@ -416,127 +402,2125 @@ K  | | | | | | | | |  K
 L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | | | | | | |d O
-P  |d|d|d| | | | | |d P
-Q  | | | | | | | | |d Q
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | | | | | | |  D
-E  | | | | | | | | |  E
-F  | | | | | | | | |  F
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
+E d|d|d| | | | | | |  E
+F b|b|b|b| | | | | |  F
 G  | | | | | | | | |  G
 H  | | | | | | | | |  H
-I  | | | | | | | |b|  I
-J  | | | | | | | |b|  J
-K  | | | | | | | |b|  K
-L  | | | | | | | |b|  L
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | | | | | | |d O
-P  |d|d|d| | | | | |d P
-Q  | | | | | | | | |d Q
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | | | | | | |  D
-E  | | | | | | | | |  E
-F  | | | | | | | | |  F
-G  | | | | | | | | |  G
-H b|b|b|b| | | | | |  H
-I  | | | | | | | |b|  I
-J  | | | | | | | |b|  J
-K  | | | | | | | |b|  K
-L  | | | | | | | |b|  L
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
+E d|d|d| | | | | | |  E
+F b|b|b|b| | | | | |  F
+G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | | | | | | |d O
-P  |d|d|d| | | | | |d P
-Q  | | | | | | | | |d Q
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Battleship?
   0|1|2|3|4|5|6|7|8|9
-A  | | | | | | | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | |b| | | | |  D
-E  | | | |b| | | | |  E
-F  | | | |b| | | | |  F
-G  | | | |b| | | | |  G
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
+E d|d|d| | | | | | |  E
+F b|b|b|b| | | | | |  F
+G b|b|b|b| | | | | |  G
 H b|b|b|b| | | | | |  H
-I  | | | | | | | |b|  I
-J  | | | | | | | |b|  J
-K  | | | | | | | |b|  K
-L  | | | | | | | |b|  L
+I  | | | | | | | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | | | | | | |d O
-P  |d|d|d| | | | | |d P
-Q  | | | | | | | | |d Q
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
-T  | | | | | | | | |  T
-  0|1|2|3|4|5|6|7|8|9
-Player B where do you want to place a Carrier?
-That placement is invalid: the ship overlaps another ship.
-Player B where do you want to place a Carrier?
-  0|1|2|3|4|5|6|7|8|9
-A c|c|c|c|c|c| | | |  A
-B  | | | | | | | | |  B
-C  | | | | | | | | |  C
-D  | | | |b| | | | |  D
-E  | | | |b| | | | |  E
-F  | | | |b| | | | |  F
-G  | | | |b| | | | |  G
-H b|b|b|b| | | | | |  H
-I  | | | | | | | |b|  I
-J  | | | | | | | |b|  J
-K  | | | | | | | |b|  K
-L  | | | | | | | |b|  L
-M  | | | | | | | | |  M
-N  | | | | | | | | |  N
-O  | | | | | | | | |d O
-P  |d|d|d| | | | | |d P
-Q  | | | | | | | | |d Q
-R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
 Player B where do you want to place a Carrier?
   0|1|2|3|4|5|6|7|8|9
-A c|c|c|c|c|c| | | |  A
-B  | | |c|c|c|c|c|c|  B
-C  | | | | | | | | |  C
-D  | | | |b| | | | |  D
-E  | | | |b| | | | |  E
-F  | | | |b| | | | |  F
-G  | | | |b| | | | |  G
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
+E d|d|d| | | | | | |  E
+F b|b|b|b| | | | | |  F
+G b|b|b|b| | | | | |  G
 H b|b|b|b| | | | | |  H
-I  | | | | | | | |b|  I
-J  | | | | | | | |b|  J
-K  | | | | | | | |b|  K
-L  | | | | | | | |b|  L
+I c|c|c|c|c|c| | | |  I
+J  | | | | | | | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
 M  | | | | | | | | |  M
 N  | | | | | | | | |  N
-O  | | | | | | | | |d O
-P  |d|d|d| | | | | |d P
-Q  | | | | | | | | |d Q
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
 R  | | | | | | | | |  R
-S s|s| |s|s|d|d|d| |  S
+S  | | | | | | | | |  S
 T  | | | | | | | | |  T
   0|1|2|3|4|5|6|7|8|9
+Player B where do you want to place a Carrier?
+  0|1|2|3|4|5|6|7|8|9
+A s|s| | | | | | | |  A
+B s|s| | | | | | | |  B
+C d|d|d| | | | | | |  C
+D d|d|d| | | | | | |  D
+E d|d|d| | | | | | |  E
+F b|b|b|b| | | | | |  F
+G b|b|b|b| | | | | |  G
+H b|b|b|b| | | | | |  H
+I c|c|c|c|c|c| | | |  I
+J c|c|c|c|c|c| | | |  J
+K  | | | | | | | | |  K
+L  | | | | | | | | |  L
+M  | | | | | | | | |  M
+N  | | | | | | | | |  N
+O  | | | | | | | | |  O
+P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R
+S  | | | | | | | | |  S
+T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A s|s|d|d|d|b|b|b|c|c A                A  | | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B  | | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C  | | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D  | | | | | | | | |  D
+E  | | | | | | | |c|c E                E  | | | | | | | | |  E
+F  | | | | | | | |c|c F                F  | | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A  | | | | | | | | |  A
+B s|s| | | | | | | |  B                B  | | | | | | | | |  B
+C d|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D d|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E d|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F b|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G b|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s|d|d|d|b|b|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B  | | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C  | | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D  | | | | | | | | |  D
+E  | | | | | | | |c|c E                E  | | | | | | | | |  E
+F  | | | | | | | |c|c F                F  | | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s| | | | | | | | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C d|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D d|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E d|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F b|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G b|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|d|d|d|b|b|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C  | | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D  | | | | | | | | |  D
+E  | | | | | | | |c|c E                E  | | | | | | | | |  E
+F  | | | | | | | |c|c F                F  | | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s| | | | | | | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D d|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E d|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F b|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G b|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|d|d|b|b|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D  | | | | | | | | |  D
+E  | | | | | | | |c|c E                E  | | | | | | | | |  E
+F  | | | | | | | |c|c F                F  | | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d| | | | | | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E d|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F b|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G b|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|d|b|b|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E  | | | | | | | | |  E
+F  | | | | | | | |c|c F                F  | | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d|d| | | | | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F b|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G b|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|b|b|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F  | | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d|d|d| | | | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G b|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|b|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G  | | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d|d|d|b| | | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H b|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|b|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H  | | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d|d|d|b|b| | |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I c|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|c|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I  | | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d|d|d|b|b|b| |  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J c|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|c A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|s| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|  A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s| | | | | | | | |  A
+B s|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|s| | | | | | | |  B                B  | | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|s|d|d|d|b|b|b|c|c B                B s| | | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s| | | | | | | | |  B
+C *|d|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a submarine!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|d|d|d|b|b|b|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d| | | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s| | | | | | | |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|d|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|d|d|b|b|b|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d| | | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d| | | | | | |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|d|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|d|b|b|b|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d| | | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d| | | | | |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|b|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|b|b|b|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b| | | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d| | | | |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|b|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|b|b|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b| | | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b| | | |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|b|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|b|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b| | | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b| | |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|c|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|c|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c| | | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b| |  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|c|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|c B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c| | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|  B
+C *|*|d| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |d|d|d|b|b|b|c|c C                C d|d| | | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | | | | | | | | |  C
+D *|*|d| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|d|d|b|b|b|c|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d| | | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d| | | | | | |  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|d| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|d|b|b|b|c|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d| | | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d| | | | | |  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|b|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a destroyer!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|b|b|b|c|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b| | | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d| | | | |  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|b|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|b|b|c|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b| | | | | | |  F
+G  | | | | | | | | |  G                G b|b| | | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b| | | |  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|b|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|b|c|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b| | | | | | |  F
+G  | | | | | | | | |  G                G b|b|b| | | | | | |  G
+H  | | | | | | | | |  H                H b|b| | | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b| | |  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|c|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|c|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b| | | | | | |  F
+G  | | | | | | | | |  G                G b|b|b| | | | | | |  G
+H  | | | | | | | | |  H                H b|b|b| | | | | | |  H
+I  | | | | | | | | |  I                I c|c| | | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b| |  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|c|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|c C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b| | | | | | |  F
+G  | | | | | | | | |  G                G b|b|b| | | | | | |  G
+H  | | | | | | | | |  H                H b|b|b| | | | | | |  H
+I  | | | | | | | | |  I                I c|c|c| | | | | | |  I
+J  | | | | | | | | |  J                J c|c| | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|  C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|b| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |b|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b| | | | | | |  F
+G  | | | | | | | | |  G                G b|b|b| | | | | | |  G
+H  | | | | | | | | |  H                H b|b|b| | | | | | |  H
+I  | | | | | | | | |  I                I c|c|c| | | | | | |  I
+J  | | | | | | | | |  J                J c|c|c| | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | | | | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|b| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|b|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b| | | | | | |  G
+H  | | | | | | | | |  H                H b|b|b| | | | | | |  H
+I  | | | | | | | | |  I                I c|c|c| | | | | | |  I
+J  | | | | | | | | |  J                J c|c|c| | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b| | | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|b| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|b|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b| | | | | | |  H
+I  | | | | | | | | |  I                I c|c|c| | | | | | |  I
+J  | | | | | | | | |  J                J c|c|c| | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b| | |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|c|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a battleship!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|*|c|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b|b| | | | | |  H
+I  | | | | | | | | |  I                I c|c|c| | | | | | |  I
+J  | | | | | | | | |  J                J c|c|c| | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b|b| |  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|*|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|c|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|*|*|c D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b|b| | | | | |  H
+I  | | | | | | | | |  I                I c|c|c|c| | | | | |  I
+J  | | | | | | | | |  J                J c|c|c| | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b|b|c|  D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|*|c|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|*|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|*|*|* D                D d|d|d| | | | | | |  D
+E  | | | | | | | |c|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b|b| | | | | |  H
+I  | | | | | | | | |  I                I c|c|c|c| | | | | |  I
+J  | | | | | | | | |  J                J c|c|c|c| | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b|b|c|c D
+E *|*|*| | | | | | |  E                E  | | | | | | | | |  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|*|*|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|*|c|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|*|*|* D                D d|d|d| | | | | | |  D
+E  | | | | | | | |*|c E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b|b| | | | | |  H
+I  | | | | | | | | |  I                I c|c|c|c|c| | | | |  I
+J  | | | | | | | | |  J                J c|c|c|c| | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b|b|c|c D
+E *|*|*| | | | | | |  E                E  | | | | | | | |c|  E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|*|*|c| | | |  I                I  | | | | | | | | |  I
+J *|*|*|*|*|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|*|*|* D                D d|d|d| | | | | | |  D
+E  | | | | | | | |*|* E                E d|d|d| | | | | | |  E
+F  | | | | | | | |c|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b|b| | | | | |  H
+I  | | | | | | | | |  I                I c|c|c|c|c| | | | |  I
+J  | | | | | | | | |  J                J c|c|c|c|c| | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b|b|c|c D
+E *|*|*| | | | | | |  E                E  | | | | | | | |c|c E
+F *|*|*|*| | | | | |  F                F  | | | | | | | | |  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|*|*|*| | | |  I                I  | | | | | | | | |  I
+J *|*|*|*|*|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player A's turn:
+     Your Ocean                           PlayerB's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*|*|*|*|*|*|*|*|* A                A s|s| | | | | | | |  A
+B *|*|*|*|*|*|*|*|*|* B                B s|s| | | | | | | |  B
+C  | |*|*|*|*|*|*|*|* C                C d|d|d| | | | | | |  C
+D  | | | | |*|*|*|*|* D                D d|d|d| | | | | | |  D
+E  | | | | | | | |*|* E                E d|d|d| | | | | | |  E
+F  | | | | | | | |*|c F                F b|b|b|b| | | | | |  F
+G  | | | | | | | | |  G                G b|b|b|b| | | | | |  G
+H  | | | | | | | | |  H                H b|b|b|b| | | | | |  H
+I  | | | | | | | | |  I                I c|c|c|c|c|c| | | |  I
+J  | | | | | | | | |  J                J c|c|c|c|c| | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You Missed!
+Player B's turn:
+     Your Ocean                           PlayerA's Ocean
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+A *|*| | | | | | | |  A                A s|s|d|d|d|b|b|b|c|c A
+B *|*| | | | | | | |  B                B s|s|d|d|d|b|b|b|c|c B
+C *|*|*| | | | | | |  C                C  | |d|d|d|b|b|b|c|c C
+D *|*|*| | | | | | |  D                D  | | | | |b|b|b|c|c D
+E *|*|*| | | | | | |  E                E  | | | | | | | |c|c E
+F *|*|*|*| | | | | |  F                F  | | | | | | | |c|  F
+G *|*|*|*| | | | | |  G                G  | | | | | | | | |  G
+H *|*|*|*| | | | | |  H                H  | | | | | | | | |  H
+I *|*|*|*|*|*| | | |  I                I  | | | | | | | | |  I
+J *|*|*|*|*|c| | | |  J                J  | | | | | | | | |  J
+K  | | | | | | | | |  K                K  | | | | | | | | |  K
+L  | | | | | | | | |  L                L  | | | | | | | | |  L
+M  | | | | | | | | |  M                M  | | | | | | | | |  M
+N  | | | | | | | | |  N                N  | | | | | | | | |  N
+O  | | | | | | | | |  O                O  | | | | | | | | |  O
+P  | | | | | | | | |  P                P  | | | | | | | | |  P
+Q  | | | | | | | | |  Q                Q  | | | | | | | | |  Q
+R  | | | | | | | | |  R                R  | | | | | | | | |  R
+S  | | | | | | | | |  S                S  | | | | | | | | |  S
+T  | | | | | | | | |  T                T  | | | | | | | | |  T
+  0|1|2|3|4|5|6|7|8|9                    0|1|2|3|4|5|6|7|8|9
+
+Attacking Phase
+You hit a carrier!
+Player B Win!
+Player A Lost!

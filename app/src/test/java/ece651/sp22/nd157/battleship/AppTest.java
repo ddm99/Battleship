@@ -26,6 +26,31 @@ class AppTest {
         PrintStream out = new PrintStream(bytes, true);
         InputStream input = getClass().getClassLoader().getResourceAsStream("input.txt");
         assertNotNull(input);
+        InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output5.txt");
+        assertNotNull(expectedStream);
+        InputStream oldIn = System.in;
+        PrintStream oldOut = System.out;
+        try {
+            System.setIn(input);
+            System.setOut(out);
+            App.main(new String[0]);
+        }
+        finally {
+          System.setIn(oldIn);
+          System.setOut(oldOut);
+        }
+        String expected = new String(expectedStream.readAllBytes());
+        String actual = bytes.toString();
+        assertEquals(expected, actual);
+    }
+
+  @Test
+  @ResourceLock(value = Resources.SYSTEM_OUT, mode = ResourceAccessMode.READ_WRITE)
+    public void test_main_alt() throws IOException {
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        PrintStream out = new PrintStream(bytes, true);
+        InputStream input = getClass().getClassLoader().getResourceAsStream("input1.txt");
+        assertNotNull(input);
         InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output.txt");
         assertNotNull(expectedStream);
         InputStream oldIn = System.in;
@@ -44,5 +69,28 @@ class AppTest {
         assertEquals(expected, actual);
     }
 
+  @Test
+  @ResourceLock(value = Resources.SYSTEM_OUT, mode = ResourceAccessMode.READ_WRITE)
+    public void test_main_alt1() throws IOException {
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        PrintStream out = new PrintStream(bytes, true);
+        InputStream input = getClass().getClassLoader().getResourceAsStream("input2.txt");
+        InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output6.txt");
+        assertNotNull(expectedStream);
+        InputStream oldIn = System.in;
+        PrintStream oldOut = System.out;
+        try {
+            System.setIn(input);
+            System.setOut(out);
+            App.main(new String[0]);
+        }
+        finally {
+          System.setIn(oldIn);
+          System.setOut(oldOut);
+        }
+        String expected = new String(expectedStream.readAllBytes());
+        String actual = bytes.toString();
+        assertEquals(expected, actual);
+    }
 
 }

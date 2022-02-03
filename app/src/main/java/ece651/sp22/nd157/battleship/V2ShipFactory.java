@@ -1,7 +1,7 @@
 package ece651.sp22.nd157.battleship;
 
 public class V2ShipFactory implements AbstractShipFactory<Character> {
-   protected Ship<Character> createShip(Placement where, int w, int h, char letter, String name) {
+   protected RectangleShip<Character> createShip(Placement where, int w, int h, char letter, String name) {
     /**
      * Helper function to create ship from input info If the orientation of the ship
      * is horizontal, exchange w and h
@@ -25,25 +25,25 @@ public class V2ShipFactory implements AbstractShipFactory<Character> {
   }
   
   @Override
-  public Ship<Character> makeSubmarine(Placement where) {
+  public RectangleShip<Character> makeSubmarine(Placement where) {
     // Create a Submarine
     return createShip(where, 1, 2, 's', "Submarine");
   }
 
   @Override
-  public Ship<Character> makeBattleship(Placement where) {
+  public TypeBattleShip<Character> makeBattleship(Placement where) {
     // create a battleship
     return new TypeBattleShip<Character>("Battleship", where.getCoordinate(), where.getOrientation(),'b', '*');
   }
 
   @Override
-  public Ship<Character> makeCarrier(Placement where) {
+  public TypeCarrier<Character> makeCarrier(Placement where) {
     // create a carrier
     return new TypeCarrier<Character>("Carrier", where.getCoordinate(), where.getOrientation(), 'c', '*');
   }
 
   @Override
-  public Ship<Character> makeDestroyer(Placement where) {
+  public RectangleShip<Character> makeDestroyer(Placement where) {
     // Create a Destroyer
     return createShip(where, 1, 3, 'd', "Destroyer");
   }

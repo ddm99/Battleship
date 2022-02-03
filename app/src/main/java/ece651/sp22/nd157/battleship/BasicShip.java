@@ -111,4 +111,6 @@ public abstract class BasicShip<T> implements Ship<T> {
       }
     }
   }
+
+  public void updateHitInfo(Ship<T> s){}
 }

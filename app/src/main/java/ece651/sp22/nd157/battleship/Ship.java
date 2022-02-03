@@ -68,4 +68,6 @@ public interface Ship<T> {
    * @return An Iterable with the coordinates that this Ship occupies
    */
   public Iterable<Coordinate> getCoordinates();
+
+  public void updateHitInfo(Ship<T> s);
 }

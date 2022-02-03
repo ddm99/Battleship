@@ -126,36 +126,57 @@ public class TextPlayer {
     }
   }
 
+  public Coordinate readCoords(String prompt) throws IOException {
+    /**
+     * Prompt the user to input a coordinate and try to convert the input to
+     * Coordinate
+     */
+    out.println(prompt);
+    String s = inputReader.readLine();
+    if (s == null) {
+      throw new EOFException("No more input to read!");
+    }
+    Coordinate c = new Coordinate(s);
+    if ((c.getRow() >= theBoard.getHeight()) || (c.getRow() < 0) || (c.getColumn() < 0)
+        || (c.getColumn() >= theBoard.getWidth())) {
+      throw new IllegalArgumentException("The Coordinate you fire at is off the board!");
+    }
+    return c;
+  }
+
   public void playOneTurn(Board<Character> enemyBoard, BoardTextView enemyBoardView) throws IOException {
-    out.print("Attacking Phase\n");
     try {
-      String s = inputReader.readLine();
-      if (s == null) {
-        throw new EOFException("No more input to read!");
-      }
-      Coordinate c = new Coordinate(s);
-      if ((c.getRow() >= enemyBoard.getHeight()) || (c.getRow() < 0) || (c.getColumn() < 0)
-          || (c.getColumn() >= enemyBoard.getWidth())) {
-        throw new IllegalArgumentException("The Coordinate you fire at is off the board!");
-      }
+      Coordinate c = readCoords("Attacking Phase");
       enemyBoard.fireAt(c);
-      if(enemyBoard.whatIsAtForEnemy(c)=='b'){
-            out.println("You hit a battleship!");
-        }else if (enemyBoard.whatIsAtForEnemy(c)=='s'){
-            out.println("You hit a submarine!");
-        }else if (enemyBoard.whatIsAtForEnemy(c)=='c'){
-            out.println("You hit a carrier!");
-        }else if(enemyBoard.whatIsAtForEnemy(c)=='d'){
-            out.println("You hit a destroyer!");
-        }else{
+      if (enemyBoard.whatIsAtForEnemy(c) == 'b') {
+        out.println("You hit a battleship!");
+      } else if (enemyBoard.whatIsAtForEnemy(c) == 's') {
+        out.println("You hit a submarine!");
+      } else if (enemyBoard.whatIsAtForEnemy(c) == 'c') {
+        out.println("You hit a carrier!");
+      } else if (enemyBoard.whatIsAtForEnemy(c) == 'd') {
+        out.println("You hit a destroyer!");
+      } else {
         out.println("You Missed!");
-      } 
+      }
     } catch (IllegalArgumentException e) {
       out.println(e.getMessage());
       playOneTurn(enemyBoard, enemyBoardView);
     } catch (EOFException e) {
       out.println(e.getMessage());
       throw new EOFException();
+    }
+  }
+
+  public void moveTargetShip() throws IOException {
+    try {
+      Coordinate c = readCoords("Please enter the location of the ship you want to move");
+      Ship<Character> s =theBoard.findMoveShip(c);
+    } catch (IllegalArgumentException e) {
+      throw e;
+    } catch (EOFException e) {
+      out.println(e.getMessage());
+      throw e;
     }
   }
 

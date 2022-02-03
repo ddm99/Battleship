@@ -1,12 +1,24 @@
 package ece651.sp22.nd157.battleship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 import java.util.HashMap;
 
 import org.junit.jupiter.api.Test;
 
 public class RectangleShipTest {
+  @Test
+  public void test_update_hit_info(){
+    V2ShipFactory f = new V2ShipFactory();
+    RectangleShip<Character> s = f.makeSubmarine(new Placement("A4H"));
+    s.recordHitAt(new Coordinate("A4"));
+    RectangleShip<Character> s1 = f.makeSubmarine(new Placement("A0V"));
+    s1.updateHitInfo(s);
+    assertFalse(s1.myPieces.get(new Coordinate("B0")));
+    assert(s1.myPieces.get(new Coordinate("A0")));
+  }
+  
   @Test
   public void test_makeCoords() {
     Coordinate upperLeft = new Coordinate(1, 2);

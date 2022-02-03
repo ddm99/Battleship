@@ -43,6 +43,19 @@ public class RectangleShip<T> extends BasicShip<T> {
     this("testship", upperLeft, 1, 1, data, onHit);
   }
 
+  public void updateHitInfo(RectangleShip<T> s) {
+    /**
+     * Update the moved ship's status based on the status of the ship before
+     * movement
+     *
+     * @param s is the ship before movement
+     */
+    for (int i = 1; i <= myBlocks.size(); i++) {
+      Boolean isHit = s.myPieces.get(s.getBlock(i));
+      this.myPieces.put(this.getBlock(i), isHit);
+    }
+  }
+
   static HashMap<Integer, Coordinate> makeCoords(Coordinate upperLeft, int width, int height) {
     /**
      * Generates a set of coordinates according to the ship's dimension and position

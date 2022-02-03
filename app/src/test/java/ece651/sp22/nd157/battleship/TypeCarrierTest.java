@@ -1,6 +1,7 @@
 package ece651.sp22.nd157.battleship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.HashMap;
@@ -8,6 +9,24 @@ import java.util.HashMap;
 import org.junit.jupiter.api.Test;
 
 public class TypeCarrierTest {
+  @Test
+  public void test_update_hit_info(){
+    V2ShipFactory f = new V2ShipFactory();
+    TypeCarrier<Character> s = f.makeCarrier(new Placement("A4L"));
+    s.recordHitAt(new Coordinate("B4"));
+    s.recordHitAt(new Coordinate("B5"));
+    s.recordHitAt(new Coordinate("B6"));
+    TypeCarrier<Character> s1 = f.makeCarrier(new Placement("A0R"));
+    s1.updateHitInfo(s);
+    assertFalse(s1.myPieces.get(new Coordinate("B0")));
+    assertFalse(s1.myPieces.get(new Coordinate("B1")));
+    assertFalse(s1.myPieces.get(new Coordinate("A1")));
+    assert(s1.myPieces.get(new Coordinate("A2")));
+    assert(s1.myPieces.get(new Coordinate("A3")));
+    assert(s1.myPieces.get(new Coordinate("A4")));
+    assertFalse(s1.myPieces.get(new Coordinate("B2")));
+  }
+  
   @Test
   public void test_makeCoords_up() {
     Coordinate upperLeft = new Coordinate(1, 2);

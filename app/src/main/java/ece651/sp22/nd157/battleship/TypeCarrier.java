@@ -34,6 +34,19 @@ final private String name;
         new SimpleShipDisplayInfo<T>(null, data));
   }
 
+  public void updateHitInfo(TypeCarrier<T> s) {
+    /**
+     * Update the moved ship's status based on the status of the ship before
+     * movement
+     *
+     * @param s is the ship before movement
+     */
+    for (int i = 1; i <= 7; i++) {
+      Boolean isHit = s.myPieces.get(s.getBlock(i));
+      this.myPieces.put(this.getBlock(i), isHit);
+    }
+  }
+
   static HashMap<Integer,Coordinate> makeCoords(Coordinate upperLeft, Character orientation) {
     /**
      * Create a Hashmap where each block of the Carrier has a respective label

@@ -24,9 +24,9 @@ class AppTest {
     public void test_main() throws IOException {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         PrintStream out = new PrintStream(bytes, true);
-        InputStream input = getClass().getClassLoader().getResourceAsStream("input.txt");
+        InputStream input = getClass().getClassLoader().getResourceAsStream("input3.txt");
         assertNotNull(input);
-        InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output5.txt");
+        InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output7.txt");
         assertNotNull(expectedStream);
         InputStream oldIn = System.in;
         PrintStream oldOut = System.out;
@@ -49,7 +49,7 @@ class AppTest {
     public void test_main_alt() throws IOException {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         PrintStream out = new PrintStream(bytes, true);
-        InputStream input = getClass().getClassLoader().getResourceAsStream("input1.txt");
+        InputStream input = getClass().getClassLoader().getResourceAsStream("input.txt");
         assertNotNull(input);
         InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output.txt");
         assertNotNull(expectedStream);

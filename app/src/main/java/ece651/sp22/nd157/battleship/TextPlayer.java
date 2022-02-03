@@ -170,8 +170,16 @@ public class TextPlayer {
 
   public void moveTargetShip() throws IOException {
     try {
-      Coordinate c = readCoords("Please enter the location of the ship you want to move");
+      Coordinate c = readCoords("Player " + name +" Please enter the location of the ship you want to move");
       Ship<Character> s =theBoard.findMoveShip(c);
+      Placement p = readPlacement("Player " + name + " where do you want to move "+s.getName()+" to?");
+      Function<Placement, Ship<Character>> createFn = shipCreationFns.get(s.getName());
+      Ship<Character> s1 = createFn.apply(p);
+      s1.updateHitInfo(s);
+      String placementProblem = theBoard.tryAddShip(s1);
+      if (placementProblem != null) {
+        throw new IllegalArgumentException("placementProblem");
+      }
     } catch (IllegalArgumentException e) {
       throw e;
     } catch (EOFException e) {

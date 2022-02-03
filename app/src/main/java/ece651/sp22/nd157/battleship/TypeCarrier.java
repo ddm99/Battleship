@@ -20,7 +20,7 @@ final private String name;
      * Constructs the coordinate and displayInfo of the ship using its parent's
      * constructor
      */
-    super(new ArrayList<Coordinate>(makeCoords(upperLeft, orientation).values()), myDisplayInfo,enemDisplayInfo);
+    super(new ArrayList<Coordinate>(makeCoords(upperLeft, orientation).values()), myDisplayInfo,enemDisplayInfo,makeCoords(upperLeft, orientation));
     this.name = name;
     this.myBlocks = new HashMap<Integer,Coordinate>();
     this.myBlocks = makeCoords(upperLeft, orientation);

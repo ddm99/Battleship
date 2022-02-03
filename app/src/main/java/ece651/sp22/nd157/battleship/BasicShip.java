@@ -5,10 +5,12 @@ import java.util.Iterator;
 
 public abstract class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
+  HashMap<Integer,Coordinate> myBlock;
   protected ShipDisplayInfo<T> myDisplayInfo;
   protected ShipDisplayInfo<T> enemyDisplayInfo;
 
-  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> enemyDisplayInfo) {
+
+  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> enemyDisplayInfo,HashMap<Integer,Coordinate> myBlock) {
     /**
      * Constructs a BasicShip type with the specific set of coordinates
      * 
@@ -18,6 +20,8 @@ public abstract class BasicShip<T> implements Ship<T> {
      */
     this.myDisplayInfo = myDisplayInfo;
     this.enemyDisplayInfo = enemyDisplayInfo;
+    myBlock = new HashMap<Integer,Coordinate>();
+    this.myBlock = myBlock;
     myPieces = new HashMap<Coordinate, Boolean>();
     for (Coordinate c : where) {
       myPieces.put(c, false);
@@ -111,6 +115,14 @@ public abstract class BasicShip<T> implements Ship<T> {
       }
     }
   }
+  public Boolean getIsHit(Integer i){
+    return this.myPieces.get(this.myBlock.get(i));
+  }
 
-  public void updateHitInfo(Ship<T> s){}
+  public void updateHitInfo(Ship<T> s){
+    for(int i =1; i<=myBlock.size();i++){
+      Boolean isHit = s.getIsHit(i);
+      this.myPieces.put(myBlock.get(i), isHit);
+    }
+  }
 }

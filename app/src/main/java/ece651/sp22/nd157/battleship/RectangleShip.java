@@ -22,7 +22,7 @@ public class RectangleShip<T> extends BasicShip<T> {
      * Constructs the coordinate and displayInfo of the ship using its parent's
      * constructor
      */
-    super(new ArrayList<Coordinate>(makeCoords(upperLeft, width, height).values()), myDisplayInfo, enemDisplayInfo);
+    super(new ArrayList<Coordinate>(makeCoords(upperLeft, width, height).values()), myDisplayInfo, enemDisplayInfo,makeCoords(upperLeft, width, height));
     this.name = name;
     this.myBlocks = new HashMap<Integer, Coordinate>();
     this.myBlocks = makeCoords(upperLeft, width, height);

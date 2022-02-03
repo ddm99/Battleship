@@ -17,7 +17,23 @@ import org.junit.jupiter.api.Test;
 
 public class TextPlayerTest {
   @Test
-  public void play_one_turn_eof(){
+  public void test_move_ship() throws IOException{
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(10, 20, "B4h\nb4\na0v\na2v", bytes);
+    InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output8.txt");
+    V2ShipFactory shipFactory = new V2ShipFactory();
+    player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p));
+    player.theBoard.fireAt(new Coordinate("B5"));
+    player.moveTargetShip();
+    player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p));
+    String expected = new String(expectedStream.readAllBytes());
+    String actual = bytes.toString();
+    assertEquals(expected, actual);
+    bytes.reset(); // clear out bytes for next time around
+  }
+  
+  @Test
+  public void test_play_one_turn_eof(){
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
     TextPlayer player1 = createTextPlayer(10, 20, "", bytes);
     Board<Character> b =new BattleShipBoard<Character>(10,20,'X');

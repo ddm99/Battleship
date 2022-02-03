@@ -70,4 +70,5 @@ public interface Ship<T> {
   public Iterable<Coordinate> getCoordinates();
 
   public void updateHitInfo(Ship<T> s);
+  public Boolean getIsHit(Integer i);
 }

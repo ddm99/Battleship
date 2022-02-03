@@ -1,0 +1,52 @@
+V2 Overview
+(1) Changes to the ship design. //By 2nd Feb
+Create a V2ShipFactory.java : public class V2ShipFactory implements AbstractShipFactory<Character>
+
+Allow 6 kinds of orientation input V,H(for Submarine and Destroyers),U,D,L,R(for BattleShips and Carriers).
+need to check the type of function called with the orientation entered.
+
+Creating Ship: Use a new class V2ShipFactory that implements AbstractShipFactory<Character>,call v1shipfactory to create submarine and estroyer, check the orientation of carrier and battleship inside thier respective ship class. Pass in upperleft and orientation for carrier and battleship
+
+makeCoordinates for the new class that extends BasicShip:
+For BattleShip:3x2 rectangle(UP and Down), fill the coordinate according to the orientation, don't forget to exchange height and width for right and left orientation.
+Use hashmap to label each block for move ship:
+U: 1        D:432      L: 4       R:2
+  234          1         13         31
+                          2         4
+
+For Carrier: 6X2 rectangle(UP and Down), fill the coordinate according to the orientation, exchange height and width for right and left orientation.
+Use hashmap to label each block for move ship:
+U:1        R: 4321     D:7        L:  567
+  2          765         64         1234
+  35                     53
+  46                      2
+   7                      1
+(2)Additional moves  //by 3rd Fed
+additonal fields in TextPlayer to keep track of number of moves left, need to modify prompt base on the number of counters left
+
+(a) move a ship to another square
+add a method in BattleShipBoard class that calls doOnePlacement and record where the ship has been hit to move with it
+
+What about the infomation we display on Board?????
+keep the display information on the board as it is.
+Instead of keeping a separate enemymiss hashset, use a hashmap to track all enemy hits--does not reveal info regarding ship movement
+Change the whatisat method of BattleShipBoard, to extract information from enemy hit hashmap
+
+need to manipulate existing ship coordinate - eg. replacing Horizontal Ship Vertically - exchange the width and height of ship coordinate
+
+What about irregular ship?
+
+add update hit to basicShip: takes another ship as input, update the hit info by block index
+(b)Sonar Scan
+Should also be a method on the board, but each player can only call ennemy board's method
+
+Start from the centre, traverse a pattern, add a counter to each type of ship and when the selected coordinate contains a ship that is not been hit, increase the counter of respective type, ignore any off the board grid
+
+Still need to make sure the centre doesn't go off the grid
+
+(3)Play against computer //By 4th Feb
+A new Class called ComputerPlayer:
+
+in App: prompt user to select whether a computer or a player and initialize accordingly
+
+ComputerPlayer has predifined input, no prompt should be printed, only display output

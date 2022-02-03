@@ -126,4 +126,21 @@ public class BattleShipBoard<T> implements Board<T> {
     }
     return true;
   }
+
+  public Ship<T> findMoveShip(Coordinate where) {
+    /**
+     * find the ship to be moved located at the specified coordinate, remove it from
+     * list of myShip
+     *
+     * @param where is the location to find the ship
+     * @return the ship found at target location
+     */
+    for (Ship<T> s : myShips) {
+      if (s.occupiesCoordinates(where)) {
+        myShips.remove(s);
+        return s;
+      }
+    }
+    throw new IllegalArgumentException("No ship exists on selected grid!");
+  }
 }

@@ -145,4 +145,18 @@ public class BattleShipBoardTest {
     testBoard.fireAt(new Coordinate(1, 1));
     assert (testBoard.isLost());
   }
+
+  @Test
+  public void test_find_move_ship(){
+    Board<Character> testBoard = new BattleShipBoard<Character>(5, 5, 'X');
+    V2ShipFactory shipFactory = new V2ShipFactory();
+    Ship<Character> s = shipFactory.makeSubmarine(new Placement(new Coordinate(0, 0), 'V'));
+    Ship<Character> s1 = shipFactory.makeDestroyer(new Placement(new Coordinate(0, 1), 'V'));
+    testBoard.tryAddShip(s);
+    testBoard.tryAddShip(s1);
+    assertEquals(s, testBoard.findMoveShip(new Coordinate(0,0)));
+    assertEquals(s1,testBoard.findMoveShip(new Coordinate(0,1)));
+    assertEquals(null,testBoard.tryAddShip(s1));
+    assertThrows(IllegalArgumentException.class, ()->testBoard.findMoveShip(new Coordinate(0,0)));
+  }
 }

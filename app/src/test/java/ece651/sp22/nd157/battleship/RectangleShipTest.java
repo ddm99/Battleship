@@ -2,7 +2,7 @@ package ece651.sp22.nd157.battleship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.HashSet;
+import java.util.HashMap;
 
 import org.junit.jupiter.api.Test;
 
@@ -10,14 +10,14 @@ public class RectangleShipTest {
   @Test
   public void test_makeCoords() {
     Coordinate upperLeft = new Coordinate(1, 2);
-    HashSet<Coordinate> testSet = RectangleShip.makeCoords(upperLeft, 1, 3);
-    HashSet<Coordinate> expectedSet = new HashSet<Coordinate>();
+    HashMap<Integer,Coordinate> testSet = RectangleShip.makeCoords(upperLeft, 1, 3);
+    HashMap<Integer,Coordinate> expectedSet = new HashMap<Integer,Coordinate>();
     Coordinate c1 = new Coordinate(1, 2);
     Coordinate c2 = new Coordinate(2, 2);
     Coordinate c3 = new Coordinate(3, 2);
-    expectedSet.add(c1);
-    expectedSet.add(c2);
-    expectedSet.add(c3);
+    expectedSet.put(1,c1);
+    expectedSet.put(2,c2);
+    expectedSet.put(3,c3);
     assert (testSet.equals(expectedSet));
   }
   
@@ -33,4 +33,17 @@ public class RectangleShipTest {
     assert(s.occupiesCoordinates(c3));
     assertEquals("submarine",s.getName());
     }
+
+  @Test
+  public void test_get(){
+  Coordinate upperLeft = new Coordinate(1, 2);
+  RectangleShip<Character> s = new RectangleShip<Character>("Destroyer", upperLeft, 1,3, 'b', '*');
+    Coordinate c1 = new Coordinate(1, 2);
+    Coordinate c2 = new Coordinate(2, 2);
+    Coordinate c3 = new Coordinate(3, 2);
+    assertEquals("Destroyer", s.getName());
+    assert(c1.equals(s.getBlock(1)));
+    assert(c2.equals(s.getBlock(2)));
+    assert(c3.equals(s.getBlock(3)));
+  }
 }

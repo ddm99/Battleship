@@ -1,6 +1,7 @@
 package ece651.sp22.nd157.battleship;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class BattleShipBoard<T> implements Board<T> {
@@ -9,6 +10,7 @@ public class BattleShipBoard<T> implements Board<T> {
   private final ArrayList<Ship<T>> myShips;
   private final PlacementRuleChecker<T> placementChecker;
   HashSet<Coordinate> enemyMisses;
+  HashMap<Coordinate,T> enemyHits;
   final T missInfo;
 
   public int getHeight() {
@@ -40,6 +42,7 @@ public class BattleShipBoard<T> implements Board<T> {
     placementChecker = rule;
     this.enemyMisses = new HashSet<Coordinate>();
     this.missInfo = missInfo;
+    this.enemyHits = new HashMap<Coordinate,T>();
   }
 
   public BattleShipBoard(int w, int h,T missInfo) {
@@ -83,7 +86,11 @@ public class BattleShipBoard<T> implements Board<T> {
      */
     for (Ship<T> s : myShips) {
       if (s.occupiesCoordinates(where)) {
+        if(isSelf){
         return s.getDisplayInfoAt(where, isSelf);
+        }else{
+          return enemyHits.get(where);
+        }
       }
     }
     if((enemyMisses.contains( where)) &&(isSelf==false)){
@@ -102,6 +109,7 @@ public class BattleShipBoard<T> implements Board<T> {
     for (Ship<T> s : myShips) {
       if (s.occupiesCoordinates(c)) {
         s.recordHitAt(c);
+        enemyHits.put(c,s.getDisplayInfoAt(c, false));
         return s;
       }
     }

@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public abstract class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
-  HashMap<Integer,Coordinate> myBlock;
+  HashMap<Integer,Coordinate> myBlocks;
   protected ShipDisplayInfo<T> myDisplayInfo;
   protected ShipDisplayInfo<T> enemyDisplayInfo;
 
@@ -20,8 +20,7 @@ public abstract class BasicShip<T> implements Ship<T> {
      */
     this.myDisplayInfo = myDisplayInfo;
     this.enemyDisplayInfo = enemyDisplayInfo;
-    myBlock = new HashMap<Integer,Coordinate>();
-    this.myBlock = myBlock;
+    this.myBlocks = myBlock;
     myPieces = new HashMap<Coordinate, Boolean>();
     for (Coordinate c : where) {
       myPieces.put(c, false);
@@ -116,13 +115,13 @@ public abstract class BasicShip<T> implements Ship<T> {
     }
   }
   public Boolean getIsHit(Integer i){
-    return this.myPieces.get(this.myBlock.get(i));
+    return this.myPieces.get(this.myBlocks.get(i));
   }
 
   public void updateHitInfo(Ship<T> s){
-    for(int i =1; i<=myBlock.size();i++){
+    for(int i =1; i<=myBlocks.size();i++){
       Boolean isHit = s.getIsHit(i);
-      this.myPieces.put(myBlock.get(i), isHit);
+      this.myPieces.put(myBlocks.get(i), isHit);
     }
   }
 }

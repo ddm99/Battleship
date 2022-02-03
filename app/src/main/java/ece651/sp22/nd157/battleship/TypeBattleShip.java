@@ -35,7 +35,7 @@ public class TypeBattleShip<T> extends BasicShip<T> {
         new SimpleShipDisplayInfo<T>(null, data));
   }
 
-  public void updateHitInfo(TypeBattleShip<T> s) {
+  public void updateHitInfo(Ship<T> s) {
     /**
      * Update the moved ship's status based on the status of the ship before
      * movement
@@ -43,7 +43,7 @@ public class TypeBattleShip<T> extends BasicShip<T> {
      * @param s is the ship before movement
      */
     for (int i = 1; i <= 4; i++) {
-      Boolean isHit = s.myPieces.get(s.getBlock(i));
+      Boolean isHit = s.getIsHit(i);
       this.myPieces.put(this.getBlock(i), isHit);
     }
   }

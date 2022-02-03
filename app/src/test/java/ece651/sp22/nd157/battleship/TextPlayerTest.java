@@ -31,6 +31,15 @@ public class TextPlayerTest {
     assertEquals(expected, actual);
     bytes.reset(); // clear out bytes for next time around
   }
+
+  @Test
+  public void test_errors() throws IOException{
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(10, 20, "B4h\nb8", bytes);
+    V2ShipFactory shipFactory = new V2ShipFactory();
+    player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p));
+    assertThrows(IllegalArgumentException.class,()->player.moveTargetShip());
+  }
   
   @Test
   public void test_play_one_turn_eof(){
@@ -39,6 +48,22 @@ public class TextPlayerTest {
     Board<Character> b =new BattleShipBoard<Character>(10,20,'X');
     BoardTextView view = new BoardTextView(b);
     assertThrows(EOFException.class,() -> player1.playOneTurn(b, view));
+  }
+  
+  @Test
+  public void test_move_eof(){
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(10, 20, "", bytes);
+    assertThrows(EOFException.class,()->player.moveTargetShip());
+  }
+
+  @Test
+  public void test_move_placement_error() throws IOException{
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(10, 20, "A0H\nA0\nA9H", bytes);
+    V2ShipFactory shipFactory = new V2ShipFactory();
+    player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p));
+    assertThrows(IllegalArgumentException.class,()->player.moveTargetShip());
   }
   
   @Test

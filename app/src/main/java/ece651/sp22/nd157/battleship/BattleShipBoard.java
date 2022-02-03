@@ -9,8 +9,7 @@ public class BattleShipBoard<T> implements Board<T> {
   private final int height;
   private final ArrayList<Ship<T>> myShips;
   private final PlacementRuleChecker<T> placementChecker;
-  HashSet<Coordinate> enemyMisses;
-  HashMap<Coordinate,T> enemyHits;
+  HashMap<Coordinate, T> enemyHits;
   final T missInfo;
 
   public int getHeight() {
@@ -40,18 +39,17 @@ public class BattleShipBoard<T> implements Board<T> {
     this.height = h;
     this.myShips = new ArrayList<Ship<T>>();
     placementChecker = rule;
-    this.enemyMisses = new HashSet<Coordinate>();
     this.missInfo = missInfo;
-    this.enemyHits = new HashMap<Coordinate,T>();
+    this.enemyHits = new HashMap<Coordinate, T>();
   }
 
-  public BattleShipBoard(int w, int h,T missInfo) {
+  public BattleShipBoard(int w, int h, T missInfo) {
     /**
      * Constructs the Board with default rule checker
      *
      * @param default rule chekcer check for both in Bound and no collision
      */
-    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<T>(null)),missInfo);
+    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<T>(null)), missInfo);
   }
 
   public String tryAddShip(Ship<T> toAdd) {
@@ -71,6 +69,7 @@ public class BattleShipBoard<T> implements Board<T> {
 
   public T whatIsAtForSelf(Coordinate where) {
     return whatIsAt(where, true);
+
   }
 
   public T whatIsAtForEnemy(Coordinate where) {
@@ -84,17 +83,16 @@ public class BattleShipBoard<T> implements Board<T> {
      * @params where is the coordinate entered to check whether the ship is present
      *         at that coordinate on the board
      */
-    for (Ship<T> s : myShips) {
-      if (s.occupiesCoordinates(where)) {
-        if(isSelf){
-        return s.getDisplayInfoAt(where, isSelf);
-        }else{
-          return enemyHits.get(where);
+    if (isSelf) {
+      for (Ship<T> s : myShips) {
+        if (s.occupiesCoordinates(where)) {
+          return s.getDisplayInfoAt(where, isSelf);
         }
       }
-    }
-    if((enemyMisses.contains( where)) &&(isSelf==false)){
-      return missInfo;
+    } else {
+      if (enemyHits.containsKey(where)) {
+        return enemyHits.get(where);
+      }
     }
     return null;
   }
@@ -109,20 +107,20 @@ public class BattleShipBoard<T> implements Board<T> {
     for (Ship<T> s : myShips) {
       if (s.occupiesCoordinates(c)) {
         s.recordHitAt(c);
-        enemyHits.put(c,s.getDisplayInfoAt(c, false));
+        enemyHits.put(c, s.getDisplayInfoAt(c, false));
         return s;
       }
     }
-    enemyMisses.add(c);
+    enemyHits.put(c, missInfo);
     return null;
   }
 
-  public boolean isLost(){
+  public boolean isLost() {
     /**
      * Check if every ship on this board has been sunk
      */
-    for(Ship<T> s:myShips){
-      if(s.isSunk()==false){
+    for (Ship<T> s : myShips) {
+      if (s.isSunk() == false) {
         return false;
       }
     }

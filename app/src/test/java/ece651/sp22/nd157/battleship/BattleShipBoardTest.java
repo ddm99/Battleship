@@ -6,6 +6,15 @@ import org.junit.jupiter.api.Test;
 
 public class BattleShipBoardTest {
   @Test
+  public void test_sonar_scan_throw(){
+    Board<Character>b=new BattleShipBoard<Character>(10, 20, null, 'X');
+    assertThrows(IllegalArgumentException.class, ()->b.sonarScan(new Coordinate(-1,1)));
+    assertThrows(IllegalArgumentException.class, ()->b.sonarScan(new Coordinate(20,1)));
+    assertThrows(IllegalArgumentException.class, ()->b.sonarScan(new Coordinate(1,10)));
+    assertThrows(IllegalArgumentException.class, ()->b.sonarScan(new Coordinate(1,-1)));
+  }
+  
+  @Test
   public void test_width_and_height() {
     Board<Character> b1 = new BattleShipBoard<Character>(10, 20, 'X');
     assertEquals(10, b1.getWidth());

@@ -17,6 +17,21 @@ import org.junit.jupiter.api.Test;
 
 public class TextPlayerTest {
   @Test
+  public void test_sonar_throws()throws IOException{
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(10, 20, "z4h", bytes);
+    assertThrows(IllegalArgumentException.class,()->player.moveTargetShip());
+    assertThrows(EOFException.class,()->player.moveTargetShip());
+  }
+
+  @Test
+  public void test_play_with_choice_eof()throws IOException{
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(10, 20, "", bytes);
+    assertThrows(EOFException.class,()->player.playwithChoice(player.theBoard,player.view));
+  }
+  
+  @Test
   public void test_move_ship() throws IOException{
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
     TextPlayer player = createTextPlayer(10, 20, "B4h\nb4\na4v\na2v", bytes);

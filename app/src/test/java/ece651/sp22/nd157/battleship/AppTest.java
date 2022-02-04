@@ -71,7 +71,7 @@ class AppTest {
 
   @Test
   @ResourceLock(value = Resources.SYSTEM_OUT, mode = ResourceAccessMode.READ_WRITE)
-    public void test_main_alt1() throws IOException {
+    public void test_main_eof() throws IOException {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         PrintStream out = new PrintStream(bytes, true);
         InputStream input = getClass().getClassLoader().getResourceAsStream("input2.txt");

@@ -245,10 +245,7 @@ public class TextPlayer {
     out.println("Carriers occupy "+result.get(3)+" squares");
     printDivider();
     ScanCounter--;
-    }catch(IllegalCallerException e){
-      throw e;
-    }catch(EOFException e){
-      out.println(e.getMessage());
+    }catch(IllegalArgumentException e){
       throw e;
     }
   }

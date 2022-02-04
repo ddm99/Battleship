@@ -1,0 +1,397 @@
+Player A: enter 'C' for compueter, enter'P' to play yourself
+Wrong input, please enter 'P' for human player, 'C' for computer player:
+Player B: enter 'C' for compueter, enter'P' to play yourself
+Com A finished placement
+---------------------------------------------------------------------------
+Com B finished placement
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a submarine!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a submarine!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a submarine!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a submarine!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a submarine!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a submarine!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a submarine!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a submarine!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a destroyer!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a destroyer!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a battleship!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a battleship!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A Missed!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B Missed!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com B's turn:
+Com B's attack
+Com B hit a carrier!
+---------------------------------------------------------------------------
+Player Com A's turn:
+Com A's attack
+Com A hit a carrier!
+---------------------------------------------------------------------------
+Player Com A Win!
+Player Com B Lost!

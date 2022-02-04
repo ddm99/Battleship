@@ -24,14 +24,11 @@ public class App {
      *
      * @params args is the argument that can be used to manipulate the program
      */
-    Board<Character> b1 = new BattleShipBoard<Character>(10, 20, 'X');
-    Board<Character> b2 = new BattleShipBoard<Character>(10, 20, 'X');
-    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-    V2ShipFactory factory = new V2ShipFactory();
-    TextPlayer p1 = new TextPlayer("A", b1, input, System.out, factory);
-    TextPlayer p2 = new TextPlayer("B", b2, input, System.out, factory);
-    App app = new App(p1, p2);
     try{
+    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+    TextPlayer p1 = makePlayer(input,"A");
+    TextPlayer p2 = makePlayer(input,"B");
+    App app = new App(p1, p2);
     app.doPlacementPhase();
     app.doAttackingPhase();
     }catch(EOFException e){
@@ -49,9 +46,31 @@ public class App {
 
   protected void doRound(TextPlayer me,TextPlayer enemy) throws IOException {
     me.out.println("Player " + me.name + "'s turn:");
+    if(me instanceof ComPlayer){
+    }else{
     me.out.println(me.view.displayMyBoardWithEnemyNextToIt(enemy.view, "Your Ocean", "Player" + enemy.name+"'s Ocean"));
+    }
     me.playwithChoice(enemy.theBoard, enemy.view);
     me.printDivider();
+  }
+
+  static public TextPlayer makePlayer(BufferedReader inputReader,String name) throws IOException{
+    V2ShipFactory factory = new V2ShipFactory();
+    Board<Character> b = new BattleShipBoard<Character>(10, 20, 'X');
+    System.out.println("Player "+name+": enter 'C' for compueter, enter'P' to play yourself");
+    while(true){
+    String s = inputReader.readLine();
+    if(s==null){
+      throw new EOFException();
+    }
+    if(s.equals("P")){
+    return new TextPlayer(name, b, inputReader, System.out, factory);
+    }else if(s.equals("C")){
+    return new ComPlayer(name, b, inputReader, System.out, factory);
+    }else{
+      System.out.println("Wrong input, please enter 'P' for human player, 'C' for computer player:");
+    }
+    }
   }
 
   public void doAttackingPhase() throws IOException {

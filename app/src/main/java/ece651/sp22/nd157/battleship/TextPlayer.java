@@ -38,10 +38,10 @@ public class TextPlayer {
     this.shipFactory = shipFactory;
     this.theBoard = theBoard;
     this.view = new BoardTextView(theBoard);
-    this.inputReader = (BufferedReader) inputSource;
+    this.inputReader = (BufferedReader)inputSource;
     // this.inputReader = new BufferedReader(inputSource);
-    this.MoveCounter =3;
-    this.ScanCounter =3;
+    this.MoveCounter = 3;
+    this.ScanCounter = 3;
     this.out = out;
     this.shipsToPlace = new ArrayList<String>();
     this.shipCreationFns = new HashMap<String, Function<Placement, Ship<Character>>>();
@@ -110,8 +110,8 @@ public class TextPlayer {
       throw new EOFException();
     }
   }
-  
-  public void printDivider(){
+
+  public void printDivider() {
     out.println("---------------------------------------------------------------------------");
   }
 
@@ -181,41 +181,41 @@ public class TextPlayer {
     }
   }
 
-  public void playwithChoice(Board<Character> enemyBoard, BoardTextView enemyBoardView)throws IOException{
-    out.println("Possible actions for Player "+name+":");
+  public void playwithChoice(Board<Character> enemyBoard, BoardTextView enemyBoardView) throws IOException {
+    out.println("Possible actions for Player " + name + ":");
     out.println();
     out.println("F Fire at a square");
-    out.println("M Move a ship to another square ("+MoveCounter+" remaining)");
-    out.println("S Sonar scan ("+ScanCounter+" remaining)");
+    out.println("M Move a ship to another square (" + MoveCounter + " remaining)");
+    out.println("S Sonar scan (" + ScanCounter + " remaining)");
     out.println();
-    out.println("Player "+name+", what would you like to do?");
+    out.println("Player " + name + ", what would you like to do?");
     printDivider();
-    try{
-    String s = inputReader.readLine();
-    if (s == null) {
-      throw new EOFException();
-    }
-    if(s.equals("F")){
-      playOneTurn(enemyBoard, enemyBoardView);
-    }else if(s.equals("M")&&(MoveCounter>0)){
-      moveTargetShip();
-    }else if(s.equals("S")&&(ScanCounter>0)){
-      useSonar(enemyBoard);
-    }else{
-      throw new IllegalArgumentException("Incorrect input for choices, please select again");
-    }
-    }catch(IllegalArgumentException e){
+    try {
+      String s = inputReader.readLine();
+      if (s == null) {
+        throw new EOFException();
+      }
+      if (s.equals("F")) {
+        playOneTurn(enemyBoard, enemyBoardView);
+      } else if (s.equals("M") && (MoveCounter > 0)) {
+        moveTargetShip();
+      } else if (s.equals("S") && (ScanCounter > 0)) {
+        useSonar(enemyBoard);
+      } else {
+        throw new IllegalArgumentException("Incorrect input for choices, please select again");
+      }
+    } catch (IllegalArgumentException e) {
       out.println(e.getMessage());
       playwithChoice(enemyBoard, enemyBoardView);
     }
   }
 
   public void moveTargetShip() throws IOException {
-    Ship<Character> s=null;
+    Ship<Character> s = null;
     try {
-      Coordinate c = readCoords("Player " + name +" Please enter the location of the ship you want to move");
-      s =theBoard.findMoveShip(c);
-      Placement p = readPlacement("Player " + name + " where do you want to move "+s.getName()+" to?");
+      Coordinate c = readCoords("Player " + name + " Please enter the location of the ship you want to move");
+      s = theBoard.findMoveShip(c);
+      Placement p = readPlacement("Player " + name + " where do you want to move " + s.getName() + " to?");
       Function<Placement, Ship<Character>> createFn = shipCreationFns.get(s.getName());
       Ship<Character> s1 = createFn.apply(p);
       s1.updateHitInfo(s);
@@ -225,7 +225,7 @@ public class TextPlayer {
       }
       MoveCounter--;
     } catch (IllegalArgumentException e) {
-      if(s!=null){
+      if (s != null) {
         theBoard.tryAddShip(s);
       }
       throw e;
@@ -235,17 +235,17 @@ public class TextPlayer {
     }
   }
 
-  public void useSonar(Board<Character> enemyBoard)throws IOException{
-    try{
-    Coordinate c = readCoords("Player " + name +" Please enter the location of your sonar scan");
-    ArrayList<Integer> result=enemyBoard.sonarScan(c);
-    out.println("Submarines occupy "+result.get(0)+" squares");
-    out.println("Destroyers occupy "+result.get(1)+" squares");
-    out.println("BattleShips occupy "+result.get(2)+" squares");
-    out.println("Carriers occupy "+result.get(3)+" squares");
-    printDivider();
-    ScanCounter--;
-    }catch(IllegalArgumentException e){
+  public void useSonar(Board<Character> enemyBoard) throws IOException {
+    try {
+      Coordinate c = readCoords("Player " + name + " Please enter the location of your sonar scan");
+      ArrayList<Integer> result = enemyBoard.sonarScan(c);
+      out.println("Submarines occupy " + result.get(0) + " squares");
+      out.println("Destroyers occupy " + result.get(1) + " squares");
+      out.println("BattleShips occupy " + result.get(2) + " squares");
+      out.println("Carriers occupy " + result.get(3) + " squares");
+      printDivider();
+      ScanCounter--;
+    } catch (IllegalArgumentException e) {
       throw e;
     }
   }

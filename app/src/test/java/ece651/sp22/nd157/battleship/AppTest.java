@@ -93,4 +93,27 @@ class AppTest {
         assertEquals(expected, actual);
     }
 
+  @Test
+  public void test_main_com_player() throws IOException {
+        ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+        PrintStream out = new PrintStream(bytes, true);
+        InputStream input = getClass().getClassLoader().getResourceAsStream("input4.txt");
+        InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output9.txt");
+        assertNotNull(expectedStream);
+        InputStream oldIn = System.in;
+        PrintStream oldOut = System.out;
+        try {
+            System.setIn(input);
+            System.setOut(out);
+            App.main(new String[0]);
+        }
+        finally {
+          System.setIn(oldIn);
+          System.setOut(oldOut);
+        }
+        String expected = new String(expectedStream.readAllBytes());
+        String actual = bytes.toString();
+        assertEquals(expected, actual);
+    }
+
 }

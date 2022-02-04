@@ -19,7 +19,7 @@ public class TextPlayerTest {
   @Test
   public void test_move_ship() throws IOException{
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
-    TextPlayer player = createTextPlayer(10, 20, "B4h\nb4\na0v\na2v", bytes);
+    TextPlayer player = createTextPlayer(10, 20, "B4h\nb4\na4v\na2v", bytes);
     InputStream expectedStream = getClass().getClassLoader().getResourceAsStream("output8.txt");
     V2ShipFactory shipFactory = new V2ShipFactory();
     player.doOnePlacement("Destroyer", (p) -> shipFactory.makeDestroyer(p));

@@ -50,7 +50,8 @@ public class App {
   protected void doRound(TextPlayer me,TextPlayer enemy) throws IOException {
     me.out.println("Player " + me.name + "'s turn:");
     me.out.println(me.view.displayMyBoardWithEnemyNextToIt(enemy.view, "Your Ocean", "Player" + enemy.name+"'s Ocean"));
-    me.playOneTurn(enemy.theBoard, enemy.view);
+    me.playwithChoice(enemy.theBoard, enemy.view);
+    me.printDivider();
   }
 
   public void doAttackingPhase() throws IOException {

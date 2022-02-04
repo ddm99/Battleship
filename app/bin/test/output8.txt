@@ -25,9 +25,9 @@ Player A Please enter the location of the ship you want to move
 Player A where do you want to move Destroyer to?
 Player A where do you want to place a Destroyer?
   0|1|2|3|4|5|6|7|8|9
-A d| |d| | | | | | |  A
-B *| |d| | | | | | |  B
-C d| |d| | | | | | |  C
+A  | |d| |d| | | | |  A
+B  | |d| |*| | | | |  B
+C  | |d| |d| | | | |  C
 D  | | | | | | | | |  D
 E  | | | | | | | | |  E
 F  | | | | | | | | |  F

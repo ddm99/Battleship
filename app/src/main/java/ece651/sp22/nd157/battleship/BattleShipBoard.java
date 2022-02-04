@@ -2,7 +2,6 @@ package ece651.sp22.nd157.battleship;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class BattleShipBoard<T> implements Board<T> {
   private final int width;
@@ -142,5 +141,45 @@ public class BattleShipBoard<T> implements Board<T> {
       }
     }
     throw new IllegalArgumentException("No ship exists on selected grid!");
+  }
+
+  public ArrayList<Integer> sonarScan(Coordinate where){
+    /**
+     * returns the result of sonar scan
+     *
+     *@return array of result, In the Order of submarine,destroyer,battleship,carrier
+     */
+    if((where.getRow()>=height)||(where.getRow()<0)||(where.getColumn()>=width)||(where.getColumn()<0)){
+      throw new IllegalArgumentException("The Coordinate for sonar scan is out of board");
+    }
+    int subCounter=0;
+    int desCounter=0;
+    int batCounter=0;
+    int carCounter=0;
+    for(int i=where.getRow()-3;i<=where.getRow()+3;i++){
+      for(int j=where.getColumn()-3;j<=where.getColumn()+3;j++){
+        int diff = Math.abs(i-where.getRow())+Math.abs(j-where.getColumn());
+        if(diff<=3){
+          T info =whatIsAtForSelf(new Coordinate(i,j));
+          if(info!=null){
+          if(info.equals('s')){
+            subCounter++;
+          }else if(info.equals('d')){
+            desCounter++;
+          }else if(info.equals('b')){
+            batCounter++;
+          }else if(info.equals('c')){
+            carCounter++;
+          }
+          }
+        }
+      }
+    }
+    ArrayList<Integer> ans = new ArrayList<Integer>();
+    ans.add(subCounter);
+    ans.add(desCounter);
+    ans.add(batCounter);
+    ans.add(carCounter);
+    return ans;
   }
 }

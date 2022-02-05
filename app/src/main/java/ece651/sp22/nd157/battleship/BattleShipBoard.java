@@ -3,6 +3,11 @@ package ece651.sp22.nd157.battleship;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * This class represents the board that will be used in this game, it contains a
+ * list of ship added to it and functions to add ships, check the info at
+ * certain grid of the board, as well as performing sonar scan and move ships
+ */
 public class BattleShipBoard<T> implements Board<T> {
   private final int width;
   private final int height;
@@ -67,11 +72,13 @@ public class BattleShipBoard<T> implements Board<T> {
   }
 
   public T whatIsAtForSelf(Coordinate where) {
+    // display the ship info for this.board
     return whatIsAt(where, true);
 
   }
 
   public T whatIsAtForEnemy(Coordinate where) {
+    // display the ship info revealed for enemy board
     return whatIsAt(where, false);
   }
 
@@ -147,6 +154,7 @@ public class BattleShipBoard<T> implements Board<T> {
     /**
      * returns the result of sonar scan
      *
+     * @param where is the center to perform sonar scan
      * @return array of result, In the Order of
      *         submarine,destroyer,battleship,carrier
      */

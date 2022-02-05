@@ -1,5 +1,9 @@
 package ece651.sp22.nd157.battleship;
 
+/**
+ * This class represents the coordinate of the board, it can parse either two
+ * ints or a string of 2 characters into relevent coordinate
+ */
 public class Coordinate {
   private final int row;
   private final int column;

@@ -3,14 +3,19 @@ package ece651.sp22.nd157.battleship;
 import java.util.HashMap;
 import java.util.Iterator;
 
+/**
+ * This class represent all type of ship that will be used in this game. It
+ * contains the function to record will the ship was hit, as well as return the
+ * info of the ship that can be displayed on BoardTextBiew
+ */
 public abstract class BasicShip<T> implements Ship<T> {
   HashMap<Coordinate, Boolean> myPieces;
-  HashMap<Integer,Coordinate> myBlocks;
+  HashMap<Integer, Coordinate> myBlocks;
   protected ShipDisplayInfo<T> myDisplayInfo;
   protected ShipDisplayInfo<T> enemyDisplayInfo;
 
-
-  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> enemyDisplayInfo,HashMap<Integer,Coordinate> myBlock) {
+  public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo, ShipDisplayInfo<T> enemyDisplayInfo,
+      HashMap<Integer, Coordinate> myBlock) {
     /**
      * Constructs a BasicShip type with the specific set of coordinates
      * 
@@ -114,12 +119,19 @@ public abstract class BasicShip<T> implements Ship<T> {
       }
     }
   }
-  public Boolean getIsHit(Integer i){
+
+  public Boolean getIsHit(Integer i) {
+    // check the repective block has been hit or not
     return this.myPieces.get(this.myBlocks.get(i));
   }
 
-  public void updateHitInfo(Ship<T> s){
-    for(int i =1; i<=myBlocks.size();i++){
+  public void updateHitInfo(Ship<T> s) {
+    /**
+     * Update the hit status on the newly moved ship
+     *
+     * @param s is the ship before movement
+     */
+    for (int i = 1; i <= myBlocks.size(); i++) {
       Boolean isHit = s.getIsHit(i);
       this.myPieces.put(myBlocks.get(i), isHit);
     }

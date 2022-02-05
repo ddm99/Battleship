@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
+/**
+ * This is the class that represent all rectangular shaped ships in the game
+ * The class will also contain block index of ship and their coordinates on the board
+ */
 public class RectangleShip<T> extends BasicShip<T> {
   final private String name;
   HashMap<Integer, Coordinate> myBlocks;

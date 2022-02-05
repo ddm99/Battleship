@@ -3,6 +3,10 @@ package ece651.sp22.nd157.battleship;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * This class represents the battleship in version2 of the game. It creates a
+ * hashmap to relates the coordinate with respective block of the ship
+ */
 public class TypeBattleShip<T> extends BasicShip<T> {
   final private String name;
   HashMap<Integer, Coordinate> myBlocks;
@@ -21,7 +25,8 @@ public class TypeBattleShip<T> extends BasicShip<T> {
      * Constructs the coordinate and displayInfo of the ship using its parent's
      * constructor
      */
-    super(new ArrayList<Coordinate>(makeCoords(upperLeft, orientation).values()), myDisplayInfo, enemDisplayInfo,makeCoords(upperLeft, orientation));
+    super(new ArrayList<Coordinate>(makeCoords(upperLeft, orientation).values()), myDisplayInfo, enemDisplayInfo,
+        makeCoords(upperLeft, orientation));
     this.name = name;
     this.myBlocks = new HashMap<Integer, Coordinate>();
     this.myBlocks = makeCoords(upperLeft, orientation);

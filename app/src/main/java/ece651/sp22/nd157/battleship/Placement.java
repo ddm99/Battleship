@@ -1,5 +1,9 @@
 package ece651.sp22.nd157.battleship;
 
+/**
+ * This class used to represent the placement info used to place ships, it
+ * contains coordinate as well as the orientation of the ship
+ */
 public class Placement {
   private final Coordinate where;
   private final char orientation;

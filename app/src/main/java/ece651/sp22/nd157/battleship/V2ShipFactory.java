@@ -1,5 +1,8 @@
 package ece651.sp22.nd157.battleship;
 
+/**
+ * This class is used to create all the ship present in the version 2 of the game
+ */
 public class V2ShipFactory implements AbstractShipFactory<Character> {
    protected RectangleShip<Character> createShip(Placement where, int w, int h, char letter, String name) {
     /**

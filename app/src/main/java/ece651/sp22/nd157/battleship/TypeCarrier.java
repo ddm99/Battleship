@@ -3,6 +3,9 @@ package ece651.sp22.nd157.battleship;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * This class represent the carrier of version 2 game, it creates a hashmap that relate every block of the ship with their coordinates
+ */
 public class TypeCarrier<T> extends BasicShip<T> {
 final private String name;
   HashMap<Integer,Coordinate> myBlocks;

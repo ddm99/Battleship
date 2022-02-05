@@ -10,6 +10,10 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.function.Function;
 
+/**
+ * This class will represent a human player, involving all the action a human
+ * player able to perform in the game of battleship
+ */
 public class TextPlayer {
   final Board<Character> theBoard;
   final BoardTextView view;
@@ -38,7 +42,7 @@ public class TextPlayer {
     this.shipFactory = shipFactory;
     this.theBoard = theBoard;
     this.view = new BoardTextView(theBoard);
-    this.inputReader = (BufferedReader)inputSource;
+    this.inputReader = (BufferedReader) inputSource;
     // this.inputReader = new BufferedReader(inputSource);
     this.MoveCounter = 3;
     this.ScanCounter = 3;
@@ -112,6 +116,7 @@ public class TextPlayer {
   }
 
   public void printDivider() {
+    // printing the divider for formatting
     out.println("---------------------------------------------------------------------------");
   }
 
@@ -157,6 +162,12 @@ public class TextPlayer {
   }
 
   public void playOneTurn(Board<Character> enemyBoard, BoardTextView enemyBoardView) throws IOException {
+    /**
+     * play a turn of attack phase
+     *
+     * @param enemyBoard     is the other player's board
+     * @param enemyBoardView is the things to display for enemy's board
+     */
     try {
       Coordinate c = readCoords("Attacking Phase");
       enemyBoard.fireAt(c);
@@ -182,6 +193,13 @@ public class TextPlayer {
   }
 
   public void playwithChoice(Board<Character> enemyBoard, BoardTextView enemyBoardView) throws IOException {
+    /**
+     * Prompt the player to select from fire, move ship and scan
+     *
+     * @param enemyBoard     is the other player's board
+     * @param enemyBoardview is the info to display for enemy's board
+     * @throw illegal argument if incorrect choice is entered
+     */
     out.println("Possible actions for Player " + name + ":");
     out.println();
     out.println("F Fire at a square");
@@ -211,6 +229,12 @@ public class TextPlayer {
   }
 
   public void moveTargetShip() throws IOException {
+    /**
+     * Select the ship to move and move that ship to a new coordinate on board
+     *
+     * @throw illegalArgumentException if the coordinate entered is out of board
+     * @throw eofexception if no string has been read
+     */
     Ship<Character> s = null;
     try {
       Coordinate c = readCoords("Player " + name + " Please enter the location of the ship you want to move");
@@ -236,6 +260,12 @@ public class TextPlayer {
   }
 
   public void useSonar(Board<Character> enemyBoard) throws IOException {
+    /**
+     * prints how many ships of each kind are there within 3 spaces of the center
+     * entered
+     *
+     * @param enemyBoard is the board that the sonar scan will be used on
+     */
     try {
       Coordinate c = readCoords("Player " + name + " Please enter the location of your sonar scan");
       ArrayList<Integer> result = enemyBoard.sonarScan(c);

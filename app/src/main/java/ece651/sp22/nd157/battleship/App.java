@@ -24,14 +24,14 @@ public class App {
      *
      * @params args is the argument that can be used to manipulate the program
      */
-    try{
-    BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-    TextPlayer p1 = makePlayer(input,"A");
-    TextPlayer p2 = makePlayer(input,"B");
-    App app = new App(p1, p2);
-    app.doPlacementPhase();
-    app.doAttackingPhase();
-    }catch(EOFException e){
+    try {
+      BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+      TextPlayer p1 = makePlayer(input, "A");
+      TextPlayer p2 = makePlayer(input, "B");
+      App app = new App(p1, p2);
+      app.doPlacementPhase();
+      app.doAttackingPhase();
+    } catch (EOFException e) {
       return;
     }
   }
@@ -44,47 +44,59 @@ public class App {
     player2.doPlacementPhase();
   }
 
-  protected void doRound(TextPlayer me,TextPlayer enemy) throws IOException {
+  protected void doRound(TextPlayer me, TextPlayer enemy) throws IOException {
+    /**
+     * This method will play on round of battleship and display the board after each
+     * turn
+     */
     me.out.println("Player " + me.name + "'s turn:");
-    if(me instanceof ComPlayer){
-    }else{
-    me.out.println(me.view.displayMyBoardWithEnemyNextToIt(enemy.view, "Your Ocean", "Player" + enemy.name+"'s Ocean"));
+    if (me instanceof ComPlayer) {
+    } else {
+      me.out.println(
+          me.view.displayMyBoardWithEnemyNextToIt(enemy.view, "Your Ocean", "Player" + enemy.name + "'s Ocean"));
     }
     me.playwithChoice(enemy.theBoard, enemy.view);
     me.printDivider();
   }
 
-  static public TextPlayer makePlayer(BufferedReader inputReader,String name) throws IOException{
+  static public TextPlayer makePlayer(BufferedReader inputReader, String name) throws IOException {
+    /**
+     * This method is used to prompt and then create accordingly a human player or
+     * an AI
+     */
     V2ShipFactory factory = new V2ShipFactory();
     Board<Character> b = new BattleShipBoard<Character>(10, 20, 'X');
-    System.out.println("Player "+name+": enter 'C' for compueter, enter'P' to play yourself");
-    while(true){
-    String s = inputReader.readLine();
-    if(s==null){
-      throw new EOFException();
-    }
-    if(s.equals("P")){
-    return new TextPlayer(name, b, inputReader, System.out, factory);
-    }else if(s.equals("C")){
-    return new ComPlayer(name, b, inputReader, System.out, factory);
-    }else{
-      System.out.println("Wrong input, please enter 'P' for human player, 'C' for computer player:");
-    }
+    System.out.println("Player " + name + ": enter 'C' for compueter, enter'P' to play yourself");
+    while (true) {
+      String s = inputReader.readLine();
+      if (s == null) {
+        throw new EOFException();
+      }
+      if (s.equals("P")) {
+        return new TextPlayer(name, b, inputReader, System.out, factory);
+      } else if (s.equals("C")) {
+        return new ComPlayer(name, b, inputReader, System.out, factory);
+      } else {
+        System.out.println("Wrong input, please enter 'P' for human player, 'C' for computer player:");
+      }
     }
   }
 
   public void doAttackingPhase() throws IOException {
+    /**
+ * This method let the two player play in turn until one player wins
+ */
     while (true) {
-      doRound(player1,player2);
+      doRound(player1, player2);
       if (player2.theBoard.isLost()) {
-        player2.out.println("Player "+player1.name+" Win!");
-        player1.out.println("Player "+player2.name+" Lost!");
+        player2.out.println("Player " + player1.name + " Win!");
+        player1.out.println("Player " + player2.name + " Lost!");
         return;
       }
-      doRound(player2,player1);
+      doRound(player2, player1);
       if (player1.theBoard.isLost()) {
-        player1.out.println("Player "+player2.name+" Win!");
-        player2.out.println("Player "+player1.name+" Lost!");
+        player1.out.println("Player " + player2.name + " Win!");
+        player2.out.println("Player " + player1.name + " Lost!");
         return;
       }
     }

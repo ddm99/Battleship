@@ -1,5 +1,8 @@
 package ece651.sp22.nd157.battleship;
 
+/**
+ * This class is used to check if the ship placed is within the board
+ */
 public class InBoundsRuleChecker<T> extends PlacementRuleChecker<T> {
 
   public InBoundsRuleChecker(PlacementRuleChecker<T> next) {
